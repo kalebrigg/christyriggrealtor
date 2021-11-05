@@ -121,21 +121,27 @@
       </div>
     </div> -->
 
-    <div class="card-container">
-      <div class="listing" v-for="listing in listings" :key="listing.id">
+    <!-- <h2 class="soldListings">Sold Listings</h2>
+    <h4 class="soldText"> <em>Browse some of Christy&#8217;s significant sales</em></h4> -->
 
-        <!-- <div class="listingImage">
-          <img :src="'assets/images/listingImages/' + listing.image" />
-        </div> -->
-        <div class="listingInfo">
-          <h3>{{ listing.address }}</h3>
-          <h3>{{ listing.price }}</h3>
-          <h4>
-            {{ listing.beds }} beds | {{ listing.baths }} bath |
-            {{ listing.squarefoot }} Sq.Ft.
-          </h4>
+    <div class="card-container">
+        <div class="listing" v-for="listing in listings" :key="listing.id">
+            <div class="listingImage">
+
+              <img :src="'assets/images/listingImages/' + listing.image" />
+
+            </div>
+            <div class="listingInfo">
+              <h3>{{ listing.address }}</h3>
+              <div class="infoSecondLine">
+                <h4>
+                  {{ listing.bed }} beds | {{ listing.bath }} bath |
+                  {{ listing.squarefoot }} Sq.Ft.
+                </h4>
+                <h4>{{ listing.price }}</h4>
+              </div>
+            </div>
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -172,6 +178,67 @@ export default {
   z-index: -1;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 425px;
+  grid-gap: 20px;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.listing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.listingImage {
+  width: 50%;
+  height:50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.listingInfo {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  z-index:3;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.infoSecondLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listingInfo h3 {
+  font-size:26px;
+}
+.listingInfo h4 {
+  font-size: 20px;
+}
+
+.soldListings{
+  margin-left: 20px;
+}
+.soldText {
+  margin-left:20px;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .fullscreen-container {
@@ -185,6 +252,67 @@ export default {
 
   .mobileMainContent {
     display: none;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 425px;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .listing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .listingImage {
+    width: 50%;
+    height:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .listingInfo {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    width: 100%;
+    z-index:3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .infoSecondLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .listingInfo h3 {
+    font-size:26px;
+  }
+  .listingInfo h4 {
+    font-size: 20px;
+  }
+
+  .soldListings{
+    margin-left: 20px;
+  }
+  .soldText {
+    margin-left:20px;
   }
 }
 
@@ -200,6 +328,67 @@ export default {
 
   .mobileMainContent {
     display: none;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 425px 425px;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .listing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .listingImage {
+    width: 50%;
+    height:50%;
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+    z-index: -1;
+  }
+
+  .listingInfo {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    width: 100%;
+    z-index:3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .infoSecondLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .listingInfo h3 {
+    font-size:26px;
+  }
+  .listingInfo h4 {
+    font-size: 20px;
+  }
+
+  .soldListings{
+    margin-left: 20px;
+  }
+  .soldText {
+    margin-left:20px;
   }
 }
 
@@ -231,27 +420,55 @@ export default {
   }
 
   .listing {
-    background-color: red;
-
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
-    object-fit: cover;
+    object-fit: contain;
+    overflow: hidden;
   }
 
   .listingImage {
-    width: 100%;
-    height:100%;
-    z-index: -1
+    width: 50%;
+    height:50%;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
 
   .listingInfo {
     background-color: rgba(0,0,0,0.6);
     color: white;
     width: 100%;
+    z-index:3;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
+  .infoSecondLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .listingInfo h3 {
+    font-size:26px;
+  }
+  .listingInfo h4 {
+    font-size: 20px;
+  }
+
+  .soldListings{
+    margin-left: 20px;
+  }
+  .soldText {
+    margin-left:20px;
+  }
+  
 }
 </style>
 
