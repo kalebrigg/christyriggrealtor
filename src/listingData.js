@@ -7,6 +7,7 @@ let listings = [
     bath: "3.5",
     squarefoot: "5,042",
     image: "img-1.jpeg",
+    link: "https://www.har.com/homedetail/1607-elmen-st-houston-tx-77019/3052609?sid=5460255&cid=CScanlan",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ let listings = [
     bath: "2",
     squarefoot: "2,213",
     image: "img-2.jpeg",
+    link: "https://www.har.com/homedetail/29322-kindle-way-katy-tx-77494/13144201?sid=6055026&cid=CScanlan",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ let listings = [
     bath: "2.5",
     squarefoot: "2,192",
     image: "img-4.jpeg",
+    link: "https://www.har.com/homedetail/3059-roe-dr-houston-tx-77087/9501365?sid=5623738&cid=CScanlan",
   },
   {
     id: 4,
@@ -34,8 +37,20 @@ let listings = [
     bath: "3",
     squarefoot: "2,744",
     image: "img-5.jpeg",
+    link: "https://www.har.com/homedetail/5112-creekmont-dr-houston-tx-77091/14768133?sid=5833498&cid=CScanlan",
   },
-
 ];
 
 export default listings;
+
+// BLANK ENTRY
+// {
+//   id: ,
+//   address: "",
+//   price: "",
+//   bed: "",
+//   bath: "",
+//   squarefoot: "",
+//   image: "",
+//   link: "",
+// },

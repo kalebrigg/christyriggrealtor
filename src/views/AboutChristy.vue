@@ -4,10 +4,7 @@
       <Menubar />
 
       <video autoplay loop muted playsinline>
-        <source
-          src="assets\videos\meetChristyPageVideo.mp4"
-          type="video/mp4"
-        />
+        <source src="assets\videos\meetChristyPageVideo.mp4" type="video/mp4" />
       </video>
 
       <img
