@@ -116,18 +116,18 @@
 
     <!-- <h2 class="soldListings">Sold Listings</h2>
     <h4 class="soldText"> <em>Browse some of Christy&#8217;s significant sales</em></h4> -->
-    <div class="">
-      <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
+    <div class="buttonContainer">
+      <button class="listingButton" type="button" name="button" v-on:click="toggleActive">Active Listings</button>
+      <button class="listingButton" type="button" name="button" v-on:click="toggleActive">Sold Listings</button>
     </div>
 
-    <div class="">
+    <div v-if="soldListings" class="">
       <div class="">
-
+          sold listings contetn
       </div>
     </div>
-    
-    <div class="card-container">
+
+    <div v-if="soldListings" class="card-container">
         <div class="listing" v-for="listing in listings" :key="listing.id"
         :style="'background-image: url(../assets/images/listingImages/'+listing.image+');'">
 
@@ -144,9 +144,9 @@
         </div>
     </div>
 
-    <div class="">
+    <div v-if="soldListings==false" class="">
       <div class="">
-
+          active lsitings
       </div>
     </div>
 
@@ -164,6 +164,11 @@ export default {
       return this.$root.$data.listings;
     },
   },
+  data: function () {
+    return {
+      soldListings: false
+    };
+  },
   methods: {
     getBackgroundImage(listing) {
       console.log("reached the stupid function ");
@@ -171,6 +176,9 @@ export default {
       var img = "background-image: url(../assets/images/listingImages/" + listing.image + ");";
       return img
     },
+    toggleActive() {
+      this.soldListings = !this.soldListings;
+    }
   },
 };
 </script>
@@ -422,6 +430,32 @@ export default {
     margin-left:20px;
   }
 
+  .buttonContainer {
+    justify-content: center;
+    display: flex;
+  }
+
+  .listingButton {
+    width: 35%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    margin: 10px;
+
+  }
+
+  .listingButton:hover {
+    background-color: #e7e7e7;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .soldButton {
+
+  }
 }
 </style>
 
