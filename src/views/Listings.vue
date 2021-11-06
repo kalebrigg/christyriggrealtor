@@ -116,7 +116,17 @@
 
     <!-- <h2 class="soldListings">Sold Listings</h2>
     <h4 class="soldText"> <em>Browse some of Christy&#8217;s significant sales</em></h4> -->
+    <div class="">
+      <button type="button" name="button"></button>
+      <button type="button" name="button"></button>
+    </div>
 
+    <div class="">
+      <div class="">
+
+      </div>
+    </div>
+    
     <div class="card-container">
         <div class="listing" v-for="listing in listings" :key="listing.id"
         :style="'background-image: url(../assets/images/listingImages/'+listing.image+');'">
@@ -133,6 +143,13 @@
             </div>
         </div>
     </div>
+
+    <div class="">
+      <div class="">
+
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -191,15 +208,10 @@ export default {
   align-items: flex-end;
   object-fit: cover;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
-.listingImage {
-  width: 50%;
-  height:50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
+
 .listingInfo {
   background-color: rgba(0,0,0,0.6);
   color: white;
@@ -257,15 +269,10 @@ export default {
     align-items: flex-end;
     object-fit: cover;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
   }
-  .listingImage {
-    width: 50%;
-    height:50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
+
   .listingInfo {
     background-color: rgba(0,0,0,0.6);
     color: white;
@@ -323,15 +330,10 @@ export default {
     align-items: flex-end;
     object-fit: cover;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
   }
-  .listingImage {
-    width: 50%;
-    height:50%;
-    top: 75%;
-    left: 75%;
-    transform: translate(-75%, -75%);
-    z-index: -1;
-  }
+
   .listingInfo {
     background-color: rgba(0,0,0,0.6);
     color: white;
