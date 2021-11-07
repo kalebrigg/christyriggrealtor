@@ -66,7 +66,7 @@
             </li>
           </ul>
           <div class="footer-github">
-            <a href="https://github.com/kalebrigg/creativeProject1"
+            <a href="https://github.com/kalebrigg/christyscandlan.git"
               >Kaleb's Private Repository</a
             >
           </div>

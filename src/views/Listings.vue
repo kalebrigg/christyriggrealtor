@@ -117,13 +117,13 @@
     <!-- <h2 class="soldListings">Sold Listings</h2>
     <h4 class="soldText"> <em>Browse some of Christy&#8217;s significant sales</em></h4> -->
     <div class="buttonContainer">
-      <button class="listingButton" type="button" name="button" v-on:click="toggleActive">Active Listings</button>
-      <button class="listingButton" type="button" name="button" v-on:click="toggleActive">Sold Listings</button>
+      <button v:bind="but1" class="listingButton" type="button" name="button" v-on:click="soldListings = false">Active Listings</button>
+      <button class="listingButton" type="button" name="button" v-on:click="soldListings = true">Sold Listings</button>
     </div>
 
     <div v-if="soldListings" class="">
-      <div class="">
-          sold listings contetn
+      <div class="soldTextContainer">
+        <div class="soldText"><em>Browse some of Christy's most significant sales.</em></div>
       </div>
     </div>
 
@@ -145,9 +145,25 @@
     </div>
 
     <div v-if="soldListings==false" class="">
-      <div class="">
-          active lsitings
-      </div>
+        <div class="soldTextContainer">
+          <div class="soldText" ><em>Browse Christy's current listings online or contact us to schedule a private showing.</em></div>
+        </div>
+
+
+
+        <section class="hero">
+            <header class="hero-header">
+              <div class="header mainHeader">
+                We're sorry!
+              </div>
+              <div class="header secondaryHeader">
+                There are no active listings at this time. Please check back soon.
+              </div>
+            </header>
+            <footer class="hero-footer">
+              <div v-on:click="soldListings=true" class="button">See Sold Listings</div>
+            </footer>
+        </section>
     </div>
 
   </div>
@@ -166,7 +182,7 @@ export default {
   },
   data: function () {
     return {
-      soldListings: false
+      soldListings: false,
     };
   },
   methods: {
@@ -242,9 +258,7 @@ export default {
 .soldListings{
   margin-left: 20px;
 }
-.soldText {
-  margin-left:20px;
-}
+
 /* Tablet Styles */
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .fullscreen-container {
@@ -303,9 +317,7 @@ export default {
   .soldListings{
     margin-left: 20px;
   }
-  .soldText {
-    margin-left:20px;
-  }
+
 }
 @media only screen and (min-width: 800px) and (max-width: 1124px) {
   .fullscreen-container {
@@ -364,9 +376,7 @@ export default {
   .soldListings{
     margin-left: 20px;
   }
-  .soldText {
-    margin-left:20px;
-  }
+
 }
 /* Desktop Styles */
 @media only screen and (min-width: 1125px) {
@@ -388,7 +398,6 @@ export default {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 30px;
     padding-bottom: 30px;
   }
   .listing {
@@ -426,9 +435,7 @@ export default {
   .soldListings{
     margin-left: 20px;
   }
-  .soldText {
-    margin-left:20px;
-  }
+
 
   .buttonContainer {
     justify-content: center;
@@ -453,9 +460,61 @@ export default {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
-  .soldButton {
+  .soldTextContainer {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3vh;
+  }
+
+  .soldText {
+    font-size: 23px;
+    text-align: center;
+    border-bottom: 2px #dfdfdf solid;
+    margin-top: 40px;
+  }
+
+  .hero {
+    height: 75vh;
+    background-image: url(https://images.unsplash.com/photo-1616627974584-fe184eee3645?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1963&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    color: white;
+  }
+
+  .mainHeader {
+    font-size: 10vh;
+    padding-left: 5vh;
+    padding-top: 5vh;
 
   }
+
+  .secondaryHeader {
+    font-size: 5vh;
+    padding-left: 5vh;
+  }
+
+  .button {
+    font-size: 3.5vh;
+    color: white;
+    border: 1px #dfdfdf solid;
+    width: 18vw;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .button:hover {
+    background-color: #808080;
+  }
+
+  .hero-footer {
+    background-color: transparent;
+    padding-left:5vh;
+  }
+
 }
 </style>
 
