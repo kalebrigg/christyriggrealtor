@@ -214,13 +214,12 @@ export default {
 }
 .card-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 425px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 425px 425px;
   grid-gap: 20px;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 .listing {
@@ -230,7 +229,7 @@ export default {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -259,6 +258,85 @@ export default {
   margin-left: 20px;
 }
 
+
+.buttonContainer {
+  justify-content: center;
+  display: flex;
+}
+
+.listingButton {
+  width: 35%;
+  height: 20%;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 25px;
+  margin: 10px;
+
+}
+
+.listingButton:hover {
+  background-color: #e7e7e7;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.soldTextContainer {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 3vh;
+}
+
+.soldText {
+  font-size: 23px;
+  text-align: center;
+  border-bottom: 2px #dfdfdf solid;
+  margin-top: 40px;
+}
+
+.hero {
+  height: 75vh;
+  background-image: url(https://images.unsplash.com/photo-1616627974584-fe184eee3645?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1963&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  color: white;
+}
+
+.mainHeader {
+  font-size: 10vh;
+  padding-left: 5vh;
+  padding-top: 5vh;
+
+}
+
+.secondaryHeader {
+  font-size: 5vh;
+  padding-left: 5vh;
+}
+
+.button {
+  font-size: 3.5vh;
+  color: white;
+  border: 1px #dfdfdf solid;
+  width: 18vw;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.button:hover {
+  background-color: #808080;
+}
+
+.hero-footer {
+  background-color: transparent;
+  padding-left:5vh;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .fullscreen-container {
@@ -273,13 +351,12 @@ export default {
   }
   .card-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 425px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 425px 425px;
     grid-gap: 20px;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 30px;
     padding-bottom: 30px;
   }
   .listing {
@@ -289,7 +366,7 @@ export default {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
     background-position: center;
     background-size: cover;
@@ -316,6 +393,84 @@ export default {
   }
   .soldListings{
     margin-left: 20px;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+    display: flex;
+  }
+
+  .listingButton {
+    width: 35%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    margin: 10px;
+
+  }
+
+  .listingButton:hover {
+    background-color: #e7e7e7;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .soldTextContainer {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3vh;
+  }
+
+  .soldText {
+    font-size: 23px;
+    text-align: center;
+    border-bottom: 2px #dfdfdf solid;
+    margin-top: 40px;
+  }
+
+  .hero {
+    height: 75vh;
+    background-image: url(https://images.unsplash.com/photo-1616627974584-fe184eee3645?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1963&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    color: white;
+  }
+
+  .mainHeader {
+    font-size: 10vh;
+    padding-left: 5vh;
+    padding-top: 5vh;
+
+  }
+
+  .secondaryHeader {
+    font-size: 5vh;
+    padding-left: 5vh;
+  }
+
+  .button {
+    font-size: 3.5vh;
+    color: white;
+    border: 1px #dfdfdf solid;
+    width: 18vw;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .button:hover {
+    background-color: #808080;
+  }
+
+  .hero-footer {
+    background-color: transparent;
+    padding-left:5vh;
   }
 
 }
@@ -338,7 +493,6 @@ export default {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 30px;
     padding-bottom: 30px;
   }
   .listing {
@@ -348,7 +502,7 @@ export default {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
     background-position: center;
     background-size: cover;
@@ -375,6 +529,85 @@ export default {
   }
   .soldListings{
     margin-left: 20px;
+  }
+
+
+  .buttonContainer {
+    justify-content: center;
+    display: flex;
+  }
+
+  .listingButton {
+    width: 35%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    margin: 10px;
+
+  }
+
+  .listingButton:hover {
+    background-color: #e7e7e7;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .soldTextContainer {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3vh;
+  }
+
+  .soldText {
+    font-size: 23px;
+    text-align: center;
+    border-bottom: 2px #dfdfdf solid;
+    margin-top: 40px;
+  }
+
+  .hero {
+    height: 75vh;
+    background-image: url(https://images.unsplash.com/photo-1616627974584-fe184eee3645?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1963&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    color: white;
+  }
+
+  .mainHeader {
+    font-size: 10vh;
+    padding-left: 5vh;
+    padding-top: 5vh;
+
+  }
+
+  .secondaryHeader {
+    font-size: 5vh;
+    padding-left: 5vh;
+  }
+
+  .button {
+    font-size: 3.5vh;
+    color: white;
+    border: 1px #dfdfdf solid;
+    width: 18vw;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .button:hover {
+    background-color: #808080;
+  }
+
+  .hero-footer {
+    background-color: transparent;
+    padding-left:5vh;
   }
 
 }
