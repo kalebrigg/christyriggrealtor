@@ -116,54 +116,58 @@
 
     <!-- <h2 class="soldListings">Sold Listings</h2>
     <h4 class="soldText"> <em>Browse some of Christy&#8217;s significant sales</em></h4> -->
-    <div class="buttonContainer">
-      <button v:bind="but1" class="listingButton" type="button" name="button" v-on:click="soldListings = false">Active Listings</button>
-      <button class="listingButton" type="button" name="button" v-on:click="soldListings = true">Sold Listings</button>
-    </div>
-
-    <div v-if="soldListings" class="">
-      <div class="soldTextContainer">
-        <div class="soldText"><em>Browse some of Christy's most significant sales.</em></div>
+    <h3 class="main-title" data-aos="fade-up" data-aos-duration="1500">LISTINGS</h3>
+    <div data-aos="fade-in" data-aos-duration="3000" >
+      <div class="buttonContainer">
+        <button v:bind="but1" class="listingButton" id="active-but" type="button" name="button" v-on:click="soldListings = false" @click="clickActive()">ACTIVE LISTINGS</button>
+        <button class="listingButton sold-but" id="sold-but" type="button" name="button" v-on:click="soldListings = true" @click="clickSold()">SOLD LISTINGS</button>
       </div>
-    </div>
 
-    <div v-if="soldListings" class="card-container">
-        <div class="listing" v-for="listing in listings" :key="listing.id"
-        :style="'background-image: url(../assets/images/listingImages/'+listing.image+');'">
-
-            <div class="listingInfo">
-              <h3>{{ listing.address }}</h3>
-              <div class="infoSecondLine">
-                <h4>
-                  {{ listing.bed }} beds | {{ listing.bath }} bath |
-                  {{ listing.squarefoot }} Sq.Ft.
-                </h4>
-                <h4>{{ listing.price }}</h4>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div v-if="soldListings==false" class="">
+      <div v-if="soldListings" class="">
         <div class="soldTextContainer">
-          <div class="soldText" ><em>Browse Christy's current listings online or contact us to schedule a private showing.</em></div>
+          <div class="soldText">Browse some of Christy's most significant sales.</div>
         </div>
+      </div>
 
+      <div v-if="soldListings" class="card-container">
+          <div class="listing" v-for="listing in listings" :key="listing.id"
+          :style="'background-image: url(../assets/images/listingImages/'+listing.image+');'">
 
-
-        <section class="hero">
-            <header class="hero-header">
-              <div class="header mainHeader">
-                We're sorry!
+              <div class="listingInfo">
+                <h3>{{ listing.address }}</h3>
+                <div class="infoSecondLine">
+                  <h4>
+                    {{ listing.bed }} beds | {{ listing.bath }} bath |
+                    {{ listing.squarefoot }} Sq.Ft.
+                  </h4>
+                  <h4>{{ listing.price }}</h4>
+                </div>
               </div>
-              <div class="header secondaryHeader">
-                There are no active listings at this time. Please check back soon.
-              </div>
-            </header>
-            <footer class="hero-footer">
-              <div v-on:click="soldListings=true" class="button">See Sold Listings</div>
-            </footer>
-        </section>
+          </div>
+      </div>
+
+      <div v-if="soldListings==false" class="">
+          <div class="soldTextContainer">
+            <div class="soldText" >Browse Christy's current listings online or contact us to schedule a private showing.</div>
+          </div>
+
+
+
+          <section class="hero">
+              <header class="hero-header">
+                <div class="header mainHeader">
+                  We're sorry!
+                </div>
+                <div class="header secondaryHeader">
+                  There are no active listings at this time. Please check back soon.
+                </div>
+              </header>
+              <footer class="hero-footer">
+                <div v-on:click="soldListings=true" class="button">SOLD LISTINGS</div>
+              </footer>
+          </section>
+      </div>
+
     </div>
 
   </div>
@@ -194,9 +198,39 @@ export default {
     },
     toggleActive() {
       this.soldListings = !this.soldListings;
+    },
+    clickActive() {
+      console.log("Active clicked");
+      document.getElementById("active-but").style.color = "black"
+      document.getElementById("active-but").style.border = "2px solid black"
+      document.getElementById("active-but").style.borderRadius = "1px"
+
+
+      document.getElementById("sold-but").style.color = "#7E7E7E"
+      document.getElementById("sold-but").style.border = "1px solid rgb(231,231,231)"
+      document.getElementById("sold-but").style.borderRadius = "0px"
+
+    },
+    clickSold() {
+      console.log("Sold clicked");
+      document.getElementById("active-but").style.color = "#7E7E7E"
+      document.getElementById("active-but").style.border = "1px solid rgb(231,231,231)"
+      document.getElementById("active-but").style.borderRadius = "0px"
+
+
+      document.getElementById("sold-but").style.color = "black"
+      document.getElementById("sold-but").style.border = "2px solid black"
+      document.getElementById("sold-but").style.borderRadius = "1px"
+
     }
   },
+  // beforeMount() {
+  //   this.clickActive()
+  // },
 };
+
+
+
 </script>
 
 <style >
@@ -212,6 +246,19 @@ export default {
   position: absolute;
   z-index: -1;
 }
+
+.main-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 37px;
+   letter-spacing: 0.34em;
+   text-align: center;
+   margin-top: 175px;
+   margin-bottom: 105px;
+ }
+
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -242,11 +289,15 @@ export default {
   z-index:3;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
 .infoSecondLine {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
 .listingInfo h3 {
   font-size:26px;
@@ -256,6 +307,7 @@ export default {
 }
 .soldListings{
   margin-left: 20px;
+
 }
 
 
@@ -269,17 +321,33 @@ export default {
   height: 20%;
   background-color: white;
   color: black;
-  border: 2px solid #e7e7e7;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 25px;
-  margin: 10px;
+  border: 1px solid #e7e7e7;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  /* font-size: 25px;
+  margin: 10px; */
 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.20em;
+  text-decoration-line: underline;
 }
 
-.listingButton:hover {
+/* .listingButton:hover {
   background-color: #e7e7e7;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} */
+
+#active-but {
+  color: black;
+  border: 2px solid black;
+}
+
+#sold-but {
+  color: #7E7E7E;
 }
 
 .soldTextContainer {
@@ -289,10 +357,15 @@ export default {
 }
 
 .soldText {
-  font-size: 23px;
+  /* font-size: 23px; */
   text-align: center;
-  border-bottom: 2px #dfdfdf solid;
-  margin-top: 40px;
+  border-bottom: 0px #dfdfdf solid;
+  /* margin-top: 40px; */
+  font-family: 'Montserrat';
+  font-style: normal !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
 }
 
 .hero {
@@ -303,38 +376,49 @@ export default {
   background-repeat: no-repeat;
 }
 
+.hero-header {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
 .header {
   color: white;
 }
 
 .mainHeader {
-  font-size: 10vh;
+  font-size: 8vh;
   padding-left: 5vh;
   padding-top: 5vh;
 
 }
 
 .secondaryHeader {
-  font-size: 5vh;
+  font-size: 3vh;
   padding-left: 5vh;
 }
 
 .button {
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   color: white;
   border: 1px #dfdfdf solid;
   width: 18vw;
   text-align: center;
   margin-top: 3vh;
+  padding: 1vh;
+  letter-spacing: 0.15em;
 }
 
-.button:hover {
+
+
+/* .button:hover {
   background-color: #808080;
-}
+} */
 
 .hero-footer {
   background-color: transparent;
   padding-left:5vh;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
 
 /* Tablet Styles */
@@ -379,11 +463,15 @@ export default {
     z-index:3;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
   .infoSecondLine {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
   .listingInfo h3 {
     font-size:26px;
@@ -405,7 +493,7 @@ export default {
     height: 20%;
     background-color: white;
     color: black;
-    border: 2px solid #e7e7e7;
+    border: 1px solid #e7e7e7;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 25px;
@@ -413,10 +501,10 @@ export default {
 
   }
 
-  .listingButton:hover {
+  /* .listingButton:hover {
     background-color: #e7e7e7;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+  } */
 
   .soldTextContainer {
     justify-content: center;
@@ -427,7 +515,7 @@ export default {
   .soldText {
     font-size: 23px;
     text-align: center;
-    border-bottom: 2px #dfdfdf solid;
+    border-bottom: 0px #dfdfdf solid;
     margin-top: 40px;
   }
 
@@ -444,24 +532,29 @@ export default {
   }
 
   .mainHeader {
-    font-size: 10vh;
+    font-size: 8vh;
     padding-left: 5vh;
     padding-top: 5vh;
 
   }
 
   .secondaryHeader {
-    font-size: 5vh;
+    font-size: 3vh;
     padding-left: 5vh;
   }
 
   .button {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     color: white;
     border: 1px #dfdfdf solid;
     width: 18vw;
     text-align: center;
     margin-top: 3vh;
+    padding: 1vh;
+    letter-spacing: 0.15em;
+  }
+
+
   }
 
   .button:hover {
@@ -471,9 +564,11 @@ export default {
   .hero-footer {
     background-color: transparent;
     padding-left:5vh;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
 
-}
+
 @media only screen and (min-width: 800px) and (max-width: 1124px) {
   .fullscreen-container {
     height: 100vh;
@@ -515,11 +610,15 @@ export default {
     z-index:3;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
   .infoSecondLine {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
   .listingInfo h3 {
     font-size:26px;
@@ -542,7 +641,7 @@ export default {
     height: 20%;
     background-color: white;
     color: black;
-    border: 2px solid #e7e7e7;
+    border: 1px solid #e7e7e7;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 25px;
@@ -550,10 +649,10 @@ export default {
 
   }
 
-  .listingButton:hover {
+  /* .listingButton:hover {
     background-color: #e7e7e7;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+  } */
 
   .soldTextContainer {
     justify-content: center;
@@ -564,7 +663,7 @@ export default {
   .soldText {
     font-size: 23px;
     text-align: center;
-    border-bottom: 2px #dfdfdf solid;
+    border-bottom: 0px #dfdfdf solid;
     margin-top: 40px;
   }
 
@@ -581,33 +680,38 @@ export default {
   }
 
   .mainHeader {
-    font-size: 10vh;
+    font-size: 8vh;
     padding-left: 5vh;
     padding-top: 5vh;
 
   }
 
   .secondaryHeader {
-    font-size: 5vh;
+    font-size: 3vh;
     padding-left: 5vh;
   }
 
   .button {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     color: white;
     border: 1px #dfdfdf solid;
     width: 18vw;
     text-align: center;
     margin-top: 3vh;
+    padding: 1vh;
+    letter-spacing: 0.15em;
   }
 
-  .button:hover {
+
+  /* .button:hover {
     background-color: #808080;
-  }
+  } */
 
   .hero-footer {
     background-color: transparent;
     padding-left:5vh;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
 
 }
@@ -653,11 +757,15 @@ export default {
     z-index:3;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
   .infoSecondLine {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
   .listingInfo h3 {
     font-size:26px;
@@ -680,7 +788,7 @@ export default {
     height: 20%;
     background-color: white;
     color: black;
-    border: 2px solid #e7e7e7;
+    border: 1px solid #e7e7e7;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 25px;
@@ -688,10 +796,10 @@ export default {
 
   }
 
-  .listingButton:hover {
+  /* .listingButton:hover {
     background-color: #e7e7e7;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+  } */
 
   .soldTextContainer {
     justify-content: center;
@@ -702,7 +810,7 @@ export default {
   .soldText {
     font-size: 23px;
     text-align: center;
-    border-bottom: 2px #dfdfdf solid;
+    border-bottom: 0px #dfdfdf solid;
     margin-top: 40px;
   }
 
@@ -719,33 +827,38 @@ export default {
   }
 
   .mainHeader {
-    font-size: 10vh;
+    font-size: 8vh;
     padding-left: 5vh;
     padding-top: 5vh;
 
   }
 
   .secondaryHeader {
-    font-size: 5vh;
+    font-size: 3vh;
     padding-left: 5vh;
   }
 
   .button {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     color: white;
     border: 1px #dfdfdf solid;
     width: 18vw;
     text-align: center;
     margin-top: 3vh;
+    padding: 1vh;
+    letter-spacing: 0.15em;
   }
 
-  .button:hover {
+
+  /* .button:hover {
     background-color: #808080;
-  }
+  } */
 
   .hero-footer {
     background-color: transparent;
     padding-left:5vh;
+    font-family: 'Montserrat';
+    font-style: normal;
   }
 
 }

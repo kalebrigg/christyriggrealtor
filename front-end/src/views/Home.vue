@@ -235,7 +235,7 @@ export default {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 38px;
   }
 
