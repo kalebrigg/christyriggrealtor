@@ -47,6 +47,33 @@
             </router-link>
           </ul>
 
+          <div class="">
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"> </i>
+            </a>
+            <p>847.708.7229</p>
+          </div>
+
+          <div class="">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"> </i>
+            </a>
+            <p>Infinity Real Estate Group <br>
+              1000 Broadway St Ste 120, <br>
+              Pearland, TX 77581</p>
+          </div>
+
+          <div class="">
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"> </i>
+            </a>
+            <p>christyemail@gmail.com</p>
+          </div>
+
+
+
+
+
           <ul class="footer-social-links">
             <li>
               <a href="https://www.facebook.com/ChristyTXRealtor/"
@@ -66,7 +93,7 @@
             <li>
               <a
                 href="https://www.youtube.com/channel/UC2PsyM6IfejA8JuP2OtidSw/featured"
-                ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                ><i class="fa fa-home" aria-hidden="true"></i
               ></a>
             </li>
           </ul>

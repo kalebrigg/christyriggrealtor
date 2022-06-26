@@ -150,8 +150,7 @@
           <div class="soldTextContainer">
             <div class="soldText" >Browse Christy's current listings online or contact us to schedule a private showing.</div>
           </div>
-
-
+          
 
           <section class="hero">
               <header class="hero-header">
