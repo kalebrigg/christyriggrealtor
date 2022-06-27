@@ -295,6 +295,10 @@ export default {
     color: #FFFFFF;
   }
 
+  .page-links a {
+    color: white; 
+  }
+
   .listing-page {
     margin-right: 10%;
     transform: translateX(-50%);
@@ -302,12 +306,10 @@ export default {
   }
 
   .listing-page a {
-    color: white;
-  }
-
-  a {
     color: white !important;
   }
+
+
 
   .listing-page:hover {
     text-decoration: underline;
@@ -548,12 +550,32 @@ export default {
     height:500px;
 }
 
-  .carousel-control-prev {
-    left: -10%;
-  }
+  .carousel-control-prev-icon {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
+    right: 110%;
+    position: absolute;
+}
 
-  .carousel-control-next {
-    right: -10%;
+  .carousel-control-next-icon {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
+    left: 110%;
+    position: absolute;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
 }
 
 .footer-heart {
