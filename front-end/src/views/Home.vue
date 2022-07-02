@@ -44,8 +44,8 @@
           <p class="title1">CHRISTY</p>
           <p class="title2">INFINITY REAL ESTATE GROUP <br> CHRISTY BUCK TEAM </p>
           <p class="description">
-            Experienced in the art of sales and communication, Christy Scanlan Rigg has a true gift for guiding her clients through the real estate process. She has established herself as a formidable real estate professional with a proven track record of success. Christy's goal is to provide comprehensive support and unparalleled commitment to her clients. She has a true enthusiasm for helping her client's real estate goals become a reality. After earning a bachelor's degree from The University of Texas and a master's degree from the University of Houston, Christy formed a true love for the city of Houston and its surrounding areas. As a professional musician, Christy is passionate about opera and the arts. She enjoys performing with and supporting the fine arts community in and around Houston.
-           </p>
+            Experienced in the art of sales and communication, Christy Scanlan Rigg has a true gift for guiding her clients through the real estate process. She has established herself as a formidable real estate professional with a proven track record of success. Christy's goal is to provide comprehensive support and unparalleled commitment to her clients. She has a true enthusiasm for helping her client's real estate goals become a reality. Christy ensures an open and direct line of communication throughout the entire sales transaction, which her clients cite as one of their favorite qualities. After earning a bachelor's degree from The University of Texas and a master's degree from the University of Houston, Christy formed a true love for the city of Houston and its surrounding areas. As a professional musician, Christy is passionate about opera and the arts. She enjoys performing with and supporting the fine arts community in and around Houston.
+          </p>
         </div>
         <div class="christy-photo-section">
           <img class="christy-img" src="assets\images\IMG_5247.jpg" alt="">
@@ -296,7 +296,7 @@ export default {
   }
 
   .page-links a {
-    color: white; 
+    color: white;
   }
 
   .listing-page {
@@ -565,7 +565,7 @@ export default {
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: -5%;
+    bottom: -35px;
     left: 0;
     z-index: 15;
     display: -ms-flexbox;
