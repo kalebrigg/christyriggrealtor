@@ -159,6 +159,13 @@
 
     <h3 class="main-title">CONNECT WITH CHRISTY</h3>
 
+    <div class="grid-container">
+      <img src="assets\images\ChristyHeadshot.jpg" class="grid-image1" alt="">
+      <img src="assets\images\ChristyHeadshot.jpg" class="grid-image2" alt="">
+      <img src="assets\images\ChristyHeadshot.jpg" class="grid-image3" alt="">
+
+    </div>
+
 
     <p class="footer-heart">
       Made with
@@ -576,6 +583,34 @@ export default {
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1%;
+  margin: 100px;
+}
+
+.grid-image1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid-image2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid-image3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .footer-heart {
