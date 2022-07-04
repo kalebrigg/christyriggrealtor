@@ -159,6 +159,18 @@
 
     <h3 class="main-title">CONNECT WITH CHRISTY</h3>
 
+    <div class="grid-container">
+      <div class="grid-image1">
+        <img src="assets\images\IMG_5244.JPG" alt="">
+      </div>
+      <div class="grid-image2">
+        <img src="assets\images\IMG_1859 (1).JPG" alt="">
+      </div>
+      <div class="grid-image3">
+        <img src="assets\images\IMG_4313 (2).JPG"  alt="">
+      </div>
+    </div>
+
 
     <p class="footer-heart">
       Made with
@@ -296,7 +308,7 @@ export default {
   }
 
   .page-links a {
-    color: white; 
+    color: white;
   }
 
   .listing-page {
@@ -576,6 +588,34 @@ export default {
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1%;
+  margin: 100px;
+}
+
+.grid-image1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid-image2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid-image3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .footer-heart {
