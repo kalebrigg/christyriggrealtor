@@ -16,7 +16,7 @@ let listings = [
     bed: "3",
     bath: "2.5",
     squarefoot: "1,498",
-    image: "",
+    image: "img-25.jpeg", 
     link: "https://www.har.com/homedetail/9551-neuens-rd-c-houston-tx-77080/15346830?sid=6428644&cid=CScanlan",
   },
   {
@@ -26,7 +26,7 @@ let listings = [
     bed: "2",
     bath: "2.5",
     squarefoot: "1,743",
-    image: "",
+    image: "img-22.jpeg",
     link: "https://www.har.com/homedetail/1347-studer-st-houston-tx-77007/3750627?sid=5847073&cid=CScanlan",
   },
   {
@@ -36,7 +36,7 @@ let listings = [
     bed: "4",
     bath: "3.5",
     squarefoot: "2,694",
-    image: "",
+    image: "img-23.jpeg",
     link: "https://www.har.com/homedetail/9323-victoria-valley-ct-porter-tx-77365/15083780?sid=5383941&cid=CScanlan",
   },
   {
@@ -76,7 +76,7 @@ let listings = [
     bed: "3",
     bath: "2.5",
     squarefoot: "1,764",
-    image: "",
+    image: "img-24.jpeg",
     link: "https://www.har.com/homedetail/8327-ariel-st-houston-tx-77074/11129810?sid=5617009&cid=CScanlan",
   },
   {
@@ -89,7 +89,7 @@ let listings = [
     image: "img-2.jpeg",
     link: "https://www.har.com/homedetail/9700-leawood-blvd-706-houston-tx-77099/15119298?sid=5561175&cid=CScanlan",
   },
-  
+
 ];
 
 export default listings;

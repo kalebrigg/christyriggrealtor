@@ -4,7 +4,7 @@
         <!-- <Menubar /> -->
 
         <video autoplay loop muted playsinline>
-          <source src="assets\videos\homePageVideo.mp4" />
+          <source src="assets\videos\testimonialsVideo.mp4" />
         </video>
 
         <div class="main-content-container" data-aos="fade-in" data-aos-duration="1500">
