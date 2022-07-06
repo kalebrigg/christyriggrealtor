@@ -161,15 +161,68 @@
 
     <div class="grid-container">
       <div class="grid-image1">
-        <img src="assets\images\IMG_5244.JPG" alt="">
+        <img class="grid-image" src="assets\images\IMG_5244.JPG" alt="">
       </div>
       <div class="grid-image2">
-        <img src="assets\images\IMG_1859 (1).JPG" alt="">
+        <img class="grid-image" src="assets\images\IMG_1859 (1).JPG" alt="">
       </div>
       <div class="grid-image3">
-        <img src="assets\images\IMG_4313 (2).JPG"  alt="">
+        <img class="grid-image" src="assets\images\IMG_4313 (2).JPG"  alt="">
       </div>
     </div>
+
+
+    <div class="contact-container">
+      <div class="contact">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"> </i>
+        </a>
+        <p>847.708.7229</p>
+      </div>
+
+      <div class="contact">
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"> </i>
+        </a>
+        <p>Infinity Real Estate Group <br>
+          1000 Broadway St Ste 120, <br>
+          Pearland, TX 77581</p>
+      </div>
+
+      <div class="contact">
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"> </i>
+        </a>
+        <p>christyemail@gmail.com</p>
+      </div>
+    </div>
+
+
+
+
+    <ul class="footer-social-links">
+      <li>
+        <a href="https://www.facebook.com/ChristyTXRealtor/"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/christyriggrealtor/?hl=en"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/christy-scanlan-7a6915185"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/channel/UC2PsyM6IfejA8JuP2OtidSw/featured"
+          ><i class="fa fa-home" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
 
 
 
@@ -578,7 +631,7 @@ export default {
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: -35px;
+    bottom: -35px !important;
     left: 0;
     z-index: 15;
     display: -ms-flexbox;
@@ -597,6 +650,12 @@ export default {
   grid-template-rows: auto auto auto;
   grid-gap: 1%;
   margin: 100px;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .grid-image1 {
@@ -619,8 +678,49 @@ export default {
   grid-row-end: 3;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right:10px; 
+}
+
+.contact p {
+  margin-left: 10px;
+}
+
+.footer-social-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.footer-social-links li {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+}
+
+.footer-social-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
 .footer-heart {
-  text-align:center;
+  /* text-align:center; */
+  margin-left: 1%;
   font-family: 'Montserrat', sans-serif;
   color: #7E7E7E;
   font-size: 12px;

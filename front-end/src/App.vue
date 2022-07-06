@@ -18,7 +18,7 @@
 
     <router-view />
 
-    <footer>
+    <!-- <footer>
       <div class="footerContainer">
         <div class="footerItem">
           <ul class="footer-menu-bar">
@@ -47,56 +47,8 @@
             </router-link>
           </ul>
 
-          <div class="">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"> </i>
-            </a>
-            <p>847.708.7229</p>
-          </div>
-
-          <div class="">
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"> </i>
-            </a>
-            <p>Infinity Real Estate Group <br>
-              1000 Broadway St Ste 120, <br>
-              Pearland, TX 77581</p>
-          </div>
-
-          <div class="">
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"> </i>
-            </a>
-            <p>christyemail@gmail.com</p>
-          </div>
 
 
-
-
-
-          <ul class="footer-social-links">
-            <li>
-              <a href="https://www.facebook.com/ChristyTXRealtor/"
-                ><i class="fa fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/christyriggrealtor/?hl=en"
-                ><i class="fa fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/christy-scanlan-7a6915185"
-                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC2PsyM6IfejA8JuP2OtidSw/featured"
-                ><i class="fa fa-home" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
           <div class="footer-github">
             <a href="https://github.com/kalebrigg/christyscandlan.git"
               >Kaleb's Private Repository</a
@@ -104,7 +56,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
