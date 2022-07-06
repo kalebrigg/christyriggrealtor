@@ -1,26 +1,41 @@
 <template>
   <div>
     <div class="fullscreen-container">
-      <Menubar />
+      <!-- <Menubar /> -->
 
       <video autoplay loop muted playsinline>
-        <source
-          src="assets\videos\listingsPageVideo.mp4"
-          type="video/mp4"
-        />
+        <source src="assets\videos\listingsPageVideo.mp4" />
       </video>
 
-      <img
-        src="assets\images\mobileVersionPicture3.jpg"
-        class="mobileMainContent"
-        alt=""
-      />
+      <div class="main-content-container" data-aos="fade-in" data-aos-duration="1500">
+        <div class="main-logo">
+          <img src="assets\images\Group 4.svg" alt="">
+        </div>
 
-      <div class="main-content">
-        <h2 class="main-header">Listings</h2>
+        <div class="page-links">
+          <router-link class="router" to="/">
+            <p class="listing-page">HOME</p>
+          </router-link>
+          <p class="contact-page">CONTACT</p>
+        </div>
       </div>
 
-      <Form />
+
+      <!-- <div class="main-content">
+        <img
+          src="assets\images\Real estate, realtor logoSmaller.png"
+          class="logoImage"
+          alt=""
+        />
+      </div>
+
+      <Form /> -->
+
+      <div class="scroll-cue">
+        <p class="scroll-text">SCROLL</p>
+        <img class="scroll-img" src="assets\images\white-down-arrow-png-2.png" alt="">
+      </div>
+
     </div>
 
     <!-- <div class="card-container">
@@ -120,7 +135,7 @@
     <div data-aos="fade-in" data-aos-duration="3000" >
       <div class="buttonContainer">
         <button v:bind="but1" class="listingButton" id="active-but" type="button" name="button" v-on:click="soldListings = false" @click="clickActive()">ACTIVE LISTINGS</button>
-        <button class="listingButton sold-but" id="sold-but" type="button" name="button" v-on:click="soldListings = true" @click="clickSold()">SOLD LISTINGS</button>
+        <button class="listingButton sold-but" id="sold-but" type="button" name="button" v-on:click="soldListings = true" @click="clickSold()">CLOSED TRANSACTIONS</button>
       </div>
 
       <div v-if="soldListings" class="">
@@ -150,7 +165,7 @@
           <div class="soldTextContainer">
             <div class="soldText" >Browse Christy's current listings online or contact us to schedule a private showing.</div>
           </div>
-          
+
 
           <section class="hero">
               <header class="hero-header">
@@ -162,7 +177,7 @@
                 </div>
               </header>
               <footer class="hero-footer">
-                <div v-on:click="soldListings=true" class="button">SOLD LISTINGS</div>
+                <div v-on:click="soldListings=true" @click="clickSold()" class="button">CLOSED TRANSACTIONS</div>
               </footer>
           </section>
       </div>
@@ -173,11 +188,11 @@
 </template>
 
 <script>
-import Menubar from "../components/Menubar";
-import Form from "../components/Form";
+// import Menubar from "../components/Menubar";
+// import Form from "../components/Form";
 export default {
   name: "app",
-  components: { Menubar, Form },
+  // components: { Menubar, Form },
   computed: {
     listings() {
       return this.$root.$data.listings;
@@ -233,13 +248,135 @@ export default {
 </script>
 
 <style >
-.fullscreen-container {
-  height: 50vh;
-  width: 100%;
-  margin-bottom: 20px;
+video {
+  filter: brightness(50%);
 }
-.fullscreen-container video {
-  display: none;
+
+.main-content-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 1%;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+
+.scroll-cue {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  top: 95%;
+  position: absolute;
+  justify-content: center;
+  opacity: 50%
+}
+
+.scroll-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.2em;
+  color: white;
+  animation: fade-slide-up 1s 1s ease-out forwards,
+           pulse2 2s 3s ease-out infinite;
+  opacity: 0;
+}
+
+.scroll-img {
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+  animation: fade-slide-up 1s 1s ease-out forwards,
+           pulse 2s 3s ease-out infinite;
+  opacity: 0;
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+.main-logo {
+
+}
+
+.page-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+}
+
+.page-links a {
+  color: white;
+}
+
+.listing-page {
+  margin-right: 10%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.listing-page a {
+  color: white !important;
+}
+
+
+
+.listing-page:hover {
+  text-decoration: underline;
+}
+.contact-page:hover {
+  text-decoration: underline;
 }
 .mobileMainContent {
   position: absolute;
