@@ -114,7 +114,7 @@
 
 
 
-     <div class="black-background">
+     <div class="black-background" id="one" data-color="#000000">
 
        <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
 
@@ -157,7 +157,7 @@
 
      </div>
 
-    <h3 class="main-title">CONNECT WITH CHRISTY</h3>
+    <h3 class="main-title" id="two" data-color="white">CONNECT WITH CHRISTY</h3>
 
     <div class="grid-container">
       <div class="grid-image1">
@@ -187,9 +187,27 @@
 // import Menubar from "../components/Menubar";
 // import Form from "../components/Form";
 // Import Swiper Vue.js components
+import $ from 'jquery';
 export default {
-  name: "app",
 
+  name: "app",
+  methods: {
+    variableBackgroundChange(){
+      // var one = "#000000";
+
+      $(window).on("scroll touchmove", function() {
+      		if ($(document).scrollTop() >= $("#one").position().top) {
+      				$('body').css('background', $("#one").attr("data-color"));
+      		};
+          if ($(document).scrollTop() > $("#two").position().top) {
+          				$('body').css('background', $("#two").attr("data-color"))
+          		};
+        });
+    }
+  },
+  created: function(){
+        this.variableBackgroundChange()
+  }
 };
 
 
@@ -530,8 +548,11 @@ export default {
   .black-background {
     margin-top: 300px;
     padding-top: 1px;
-    background-color: black;
+    /* background-color: black; */
+    transition: all 200ms;
+    will-change: "background";
   }
+
 
   .feat-listing-title {
     font-family: 'Montserrat';
