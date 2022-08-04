@@ -55,109 +55,128 @@
       </div>
 
       <!-- https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/florian-schmidinger-b_79nOqf95I-unsplash.jpg -->
+      <section class="background" data-color="white">
+        <h3 class="main-title" data-aos="fade-up" data-aos-duration="1500">TESTIMONIALS</h3>
 
-      <h3 class="main-title" data-aos="fade-up" data-aos-duration="1500">TESTIMONIALS</h3>
+         <div class="testimonials-container" data-aos="fade-in" data-aos-duration="3000"  >
+          <!-- <div class="white-filter">
+            <img class="testimonials-img" src="assets\images\florian-schmidinger-b_79nOqf95I-unsplash.jpg" alt="">
+          </div> -->
+          <div class="big-container">
+            <div class="medium-container animate">
+              <div class="testimonies">
+                <div class="testimony">
+                  <p class="testimony-text">Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to! </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way. </p>
+                </div>
+              </div>
 
-       <div class="testimonials-container" data-aos="fade-in" data-aos-duration="3000">
-        <!-- <div class="white-filter">
-          <img class="testimonials-img" src="assets\images\florian-schmidinger-b_79nOqf95I-unsplash.jpg" alt="">
-        </div> -->
-        <div class="big-container">
-          <div class="medium-container animate">
-            <div class="testimonies">
-              <div class="testimony">
-                <p class="testimony-text">Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to! </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way. </p>
-              </div>
-            </div>
-
-            <div class="testimonies">
-              <div class="testimony">
-                <p class="testimony-text">Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to! </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly. </p>
-              </div>
-              <div class="testimony">
-                <p class="testimony-text">We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way. </p>
+              <div class="testimonies">
+                <div class="testimony">
+                  <p class="testimony-text">Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to! </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly. </p>
+                </div>
+                <div class="testimony">
+                  <p class="testimony-text">We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way. </p>
+                </div>
               </div>
             </div>
           </div>
+
+            <section class="background" data-color="white"></section>
+
+        </div>
+      </section>
+
+
+
+
+
+      <div class="black-background background" data-color="white">
+
+        <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
+
+        <section class="background" data-color="black">
+        <div class="carousel-container" data-aos="fade-in" data-aos-duration="3000">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+           </ol>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img class="d-block w-100" src="assets\images\listingImages\img-1.jpeg" alt="First slide">
+               <div class="img-text">
+                 <div class="img-text-firstline">
+                   <p>1607 Elmen, Houston, TX, 77019</p>
+                 </div>
+                 <div class="img-text-secondline">
+                   <p>3 beds | 3.5 bath | 5,042 Sq.Ft.</p>
+                   <p>$2,176,000</p>
+                 </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="assets\images\listingImages\img-25.jpeg" alt="Second slide">
+               <p>1607 asdfadsf, Hoqweruston, TX, 77019</p>
+               <p>2 beds | 3.25 bath | 1232 Sq.Ft.</p>
+               <p>$2,111276,1000</p>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="assets\images\listingImages\img-22.jpeg" alt="Third slide">
+             </div>
+           </div>
+           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
         </div>
 
 
-      </div>
-
-
-
-
-     <div class="black-background" id="one" data-color="#000000">
-
-       <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
-
-       <div class="carousel-container">
-         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg" alt="Third slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+       <div class="">
+         VIEW ALL LISTINGS
        </div>
 
 
-      <div class="">
-        VIEW ALL LISTINGS
+
+      </section>
       </div>
 
 
-
-
-     </div>
-
-    <h3 class="main-title" id="two" data-color="white">CONNECT WITH CHRISTY</h3>
+    <section class="background" data-color="white">
+      <h3 class="main-title">CONNECT WITH CHRISTY</h3>
+    </section>
 
     <div class="grid-container">
       <div class="grid-image1">
@@ -248,14 +267,35 @@ export default {
     variableBackgroundChange(){
       // var one = "#000000";
 
-      $(window).on("scroll touchmove", function() {
-      		if ($(document).scrollTop() >= $("#one").position().top) {
-      				$('body').css('background', $("#one").attr("data-color"));
-      		};
-          if ($(document).scrollTop() > $("#two").position().top) {
-          				$('body').css('background', $("#two").attr("data-color"))
-          		};
-        });
+      $(window).scroll(function() {
+
+  // selectors
+  var $window = $(window),
+      $body = $('body'),
+      $panel = $('.background');
+
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height());
+
+  $panel.each(function () {
+    var $this = $(this);
+
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+      // Remove all classes on body with color-
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+
+      // Add class of currently active div
+      $body.addClass('color-' + $(this).data('color'));
+    }
+  });
+
+}).scroll();
     }
   },
   created: function(){
@@ -269,7 +309,19 @@ export default {
 
 <style>
 
+  body {
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 2s ease;
+  }
 
+  .color-black {
+    background-color: black;
+  }
+
+  .color-white {
+    background-color: white;
+  }
 
   video {
     filter: brightness(50%);
@@ -601,9 +653,6 @@ export default {
   .black-background {
     margin-top: 300px;
     padding-top: 1px;
-    /* background-color: black; */
-    transition: all 200ms;
-    will-change: "background";
   }
 
 
@@ -712,7 +761,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin-left: 10px;
-  margin-right:10px; 
+  margin-right:10px;
 }
 
 .contact p {
