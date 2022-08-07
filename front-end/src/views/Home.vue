@@ -49,8 +49,8 @@
         </div>
         <div class="christy-photo-section">
           <img class="christy-img" src="assets\images\IMG_5247.jpg" alt="">
-          <p class="title3">GET IN TOUCH - <span class="special"> 847.708.7229</span> </p>
-          <p class="title3 special">christyemail@gmail.com</p>
+          <p class="title3">GET IN TOUCH - <span class="special"><a href="tel:+1847-708-7229">847.708.7229</a></span> </p>
+          <p class="title3 special"><a href="mailto:christyscanlanhomes@gmail.com">christyscanlanhomes@gmail.com</a></p>
         </div>
       </div>
 
@@ -58,65 +58,72 @@
 
       <h3 class="main-title" data-aos="fade-up" data-aos-duration="1500">TESTIMONIALS</h3>
 
-       <div class="testimonials-container" data-aos="fade-in" data-aos-duration="3000">
-        <!-- <div class="white-filter">
-          <img class="testimonials-img" src="assets\images\florian-schmidinger-b_79nOqf95I-unsplash.jpg" alt="">
-        </div> -->
+       <!-- <div class="te  stimonials-container" data-aos="fade-in" data-aos-duration="3000">
         <div class="big-container">
           <div class="medium-container animate">
             <div class="testimonies">
               <div class="testimony">
-                <p class="testimony-text">Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well. </p>
+                <p class="testimony-text">"Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well." </p>
+                <p class="testimony-text2">Happy Buyer in Harris County </p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly. </p>
+                <p class="testimony-text">"We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly." </p>
+                <p class="testimony-text2">Happy Buyer in Northwest Houston </p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to! </p>
+                <p class="testimony-text">"She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to!" </p>
+                <p class="testimony-text2">Happy Buyer in Katy</p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful. </p>
+                <p class="testimony-text">"Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful." </p>
+                <p class="testimony-text2">Happy Seller in Harris County</p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly. </p>
+                <p class="testimony-text">"She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly." </p>
+                <p class="testimony-text2">Happy Seller in the Hobby Area</p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way. </p>
+                <p class="testimony-text">"We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way." </p>
+                <p class="testimony-text2">Happy Seller in Harris County</p>
               </div>
             </div>
 
             <div class="testimonies">
               <div class="testimony">
-                <p class="testimony-text">Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well. </p>
+                <p class="testimony-text">"Christy was super helpful and patient with me being slow and indecisive when it came to choosing a house to buy, and patient in walking me through all the processes. All her recommendations worked out great as well." </p>
+                <p class="testimony-text2">Happy Buyer in Harris County </p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly. </p>
+                <p class="testimony-text">"We cannot recommend Christy highly enough. As first time buyers, my fiance and I had quite a bit of trepidation going into the real estate process. Christy immediately put our minds at ease, and wasted no time in providing recommendations for properties that fit our taste and budget perfectly." </p>
+                <p class="testimony-text2">Happy Buyer in Northwest Houston </p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to! </p>
+                <p class="testimony-text">"She went above and beyond at all hours to make sure we got into the perfect rental in a short amount of time. We can’t say enough amazing things about her! Communication was amazing and she is so easy to talk to!" </p>
+                <p class="testimony-text2">Happy Buyer in Katy</p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful. </p>
+                <p class="testimony-text">"Christy was extremely knowledgeable, and great at communicating clearly and in a timely manner. She was always upbeat and encouraging when things became a little stressful." </p>
+                <p class="testimony-text2">Happy Seller in Harris County</p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly. </p>
+                <p class="testimony-text">"She was very helpful in the process and stayed on top of things. Made sure the job was done efficiently and quickly." </p>
+                <p class="testimony-text2">Happy Seller in the Hobby Area</p>
               </div>
               <div class="testimony">
-                <p class="testimony-text">We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way. </p>
+                <p class="testimony-text">"We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way." </p>
+                <p class="testimony-text2">Happy Seller in Harris County</p>
               </div>
             </div>
           </div>
         </div>
-
-
-      </div>
+      </div> -->
 
 
 
 
      <div class="black-background">
 
-       <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
+       <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED CLOSED TRANSACTIONS</h3>
 
        <div class="carousel-container">
          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
@@ -147,7 +154,9 @@
         </div>
        </div>
 
+       <div class="">
 
+       </div>
       <div class="">
         VIEW ALL LISTINGS
       </div>
@@ -169,60 +178,90 @@
       <div class="grid-image3">
         <img class="grid-image" src="assets\images\IMG_4313 (2).JPG"  alt="">
       </div>
+      <div class="grid-image4">
+        <ul class="footer-social-links">
+          <li>
+            <a href="https://www.facebook.com/ChristyTXRealtor/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/christyriggrealtor/?hl=en"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/christy-scanlan-7a6915185"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UC2PsyM6IfejA8JuP2OtidSw/featured"
+              ><i class="fa fa-home" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-contact1">
+        <div class="contact">
+          <a href="">
+            <i class="fa fa-phone" aria-hidden="true"> </i>
+          </a>
+          <p>847.708.7229</p>
+        </div>
+      </div>
+      <div class="grid-contact2">
+        <div class="contact">
+          <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"> </i>
+          </a>
+          <p>Infinity Real Estate Group <br>
+            1000 Broadway Street Suite 120, <br>
+            Pearland, TX 77581</p>
+        </div>
+      </div>
+      <div class="grid-contact3">
+        <div class="contact">
+          <a href="">
+            <i class="fa fa-envelope" aria-hidden="true"> </i>
+          </a>
+          <p>christyscanlanhomes@gmail.com</p>
+        </div>
+      </div>
+
     </div>
 
 
     <div class="contact-container">
-      <div class="contact">
+      <!-- <div class="contact">
         <a href="">
           <i class="fa fa-phone" aria-hidden="true"> </i>
         </a>
         <p>847.708.7229</p>
-      </div>
+      </div> -->
 
-      <div class="contact">
+      <!-- <div class="contact">
         <a href="">
           <i class="fa fa-map-marker" aria-hidden="true"> </i>
         </a>
         <p>Infinity Real Estate Group <br>
-          1000 Broadway St Ste 120, <br>
+          1000 Broadway Street Suite 120, <br>
           Pearland, TX 77581</p>
-      </div>
+      </div> -->
 
-      <div class="contact">
+      <!-- <div class="contact">
         <a href="">
           <i class="fa fa-envelope" aria-hidden="true"> </i>
         </a>
-        <p>christyemail@gmail.com</p>
-      </div>
+        <p>christyscanlanhomes@gmail.com</p>
+      </div> -->
     </div>
 
 
 
 
-    <ul class="footer-social-links">
-      <li>
-        <a href="https://www.facebook.com/ChristyTXRealtor/"
-          ><i class="fa fa-facebook"></i
-        ></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/christyriggrealtor/?hl=en"
-          ><i class="fa fa-instagram" aria-hidden="true"></i
-        ></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/christy-scanlan-7a6915185"
-          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-        ></a>
-      </li>
-      <li>
-        <a
-          href="https://www.youtube.com/channel/UC2PsyM6IfejA8JuP2OtidSw/featured"
-          ><i class="fa fa-home" aria-hidden="true"></i
-        ></a>
-      </li>
-    </ul>
+
 
 
 
@@ -365,6 +404,10 @@ export default {
     color: white;
   }
 
+  .page-links a:hover {
+    color: white;
+  }
+
   .listing-page {
     margin-right: 10%;
     transform: translateX(-50%);
@@ -429,12 +472,26 @@ export default {
     /* text-decoration: underline; */
   }
 
-  .special {
+  .special a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7E7E7E;
+    letter-spacing: .3em;
+    /* text-align: center; */
+    margin: 0;
     text-decoration: underline;
   }
 
-  .special:hover {
+  .special:hover a {
+
+
+
+
     cursor: pointer;
+    color: black;
   }
 
   .description {
@@ -552,7 +609,7 @@ export default {
     margin: -20px;
   }
 
-  .testimony-text {
+  .testimony-text, .testimony-text2  {
     color: black;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
@@ -646,8 +703,8 @@ export default {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 1%;
   margin: 100px;
 }
@@ -678,32 +735,68 @@ export default {
   grid-row-end: 3;
 }
 
+.grid-image4{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.grid-contact1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.grid-contact2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.grid-contact3 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
 .contact-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  vertical-align: center;
 }
 
 .contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  vertical-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin-left: 10px;
-  margin-right:10px; 
+  margin-right:10px;
+  letter-spacing: 0.01em;
 }
 
 .contact p {
   margin-left: 10px;
 }
 
+.contact a {
+  color: black;
+  font-size: 1.5rem;
+}
+
 .footer-social-links {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
+  justify-content: space-evenly;
+  margin: 20px;
 }
 
 .footer-social-links li {
@@ -715,7 +808,7 @@ export default {
 .footer-social-links a {
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .footer-heart {
@@ -727,15 +820,15 @@ export default {
 }
 
 .footer-heart a {
-  border-bottom: 1px solid #453886;
-  color: #453886;
+  border-bottom: 1px solid #7E7E7E;
+  color: #7E7E7E;
   padding-bottom: .25em;
   text-decoration: none;
 }
 
 .footer-heart a:hover {
-  color:#2196f3;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s   5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  color: black;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s   5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 20%;

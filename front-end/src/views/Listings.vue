@@ -360,6 +360,10 @@ video {
   color: white;
 }
 
+.page-links a:hover {
+  color: white;
+}
+
 .listing-page {
   margin-right: 10%;
   transform: translateX(-50%);
