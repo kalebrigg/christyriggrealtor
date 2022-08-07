@@ -86,7 +86,6 @@
                 <p class="testimony-text">"We entered into the home buying process feeling prepared, but quickly learned how much we didn’t know. However, because of Christy’s expert guidance, we never lacked for confidence in our decision making along the way." </p>
                 <p class="testimony-text2">Happy Seller in Harris County</p>
               </div>
-            </div>
 
             <div class="testimonies">
               <div class="testimony">
@@ -120,6 +119,7 @@
 
 
 
+    <section class="background" data-color="white"></section>
 
      <div class="black-background">
 
@@ -152,21 +152,72 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-       </div>
+      </section>
 
-       <div class="">
 
-       </div>
-      <div class="">
-        VIEW ALL LISTINGS
+
+
+
+      <div class="black-background background" data-color="white">
+
+        <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
+
+        <section class="background" data-color="black">
+        <div class="carousel-container" data-aos="fade-in" data-aos-duration="3000">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+           </ol>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img class="d-block w-100" src="assets\images\listingImages\img-1.jpeg" alt="First slide">
+               <div class="img-text">
+                 <div class="img-text-firstline">
+                   <p>1607 Elmen, Houston, TX, 77019</p>
+                 </div>
+                 <div class="img-text-secondline">
+                   <p>3 beds | 3.5 bath | 5,042 Sq.Ft.</p>
+                   <p>$2,176,000</p>
+                 </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="assets\images\listingImages\img-25.jpeg" alt="Second slide">
+               <p>1607 asdfadsf, Hoqweruston, TX, 77019</p>
+               <p>2 beds | 3.25 bath | 1232 Sq.Ft.</p>
+               <p>$2,111276,1000</p>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="assets\images\listingImages\img-22.jpeg" alt="Third slide">
+             </div>
+           </div>
+           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+        </div>
+
+
+        <div class="">
+          VIEW ALL LISTINGS
+        </div>
+
+
+
+        </section>
       </div>
 
 
-
-
-     </div>
-
-    <h3 class="main-title">CONNECT WITH CHRISTY</h3>
+    <section class="background" data-color="white">
+      <h3 class="main-title">CONNECT WITH CHRISTY</h3>
+    </section>
 
     <div class="grid-container">
       <div class="grid-image1">
@@ -279,9 +330,48 @@
 // import Menubar from "../components/Menubar";
 // import Form from "../components/Form";
 // Import Swiper Vue.js components
+import $ from 'jquery';
 export default {
-  name: "app",
 
+  name: "app",
+  methods: {
+    variableBackgroundChange(){
+      // var one = "#000000";
+
+      $(window).scroll(function() {
+
+  // selectors
+  var $window = $(window),
+      $body = $('body'),
+      $panel = $('.background');
+
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height());
+
+  $panel.each(function () {
+    var $this = $(this);
+
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+      // Remove all classes on body with color-
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+
+      // Add class of currently active div
+      $body.addClass('color-' + $(this).data('color'));
+    }
+  });
+
+}).scroll();
+    }
+  },
+  created: function(){
+        this.variableBackgroundChange()
+  }
 };
 
 
@@ -290,7 +380,19 @@ export default {
 
 <style>
 
+  body {
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 2s ease;
+  }
 
+  .color-black {
+    background-color: black;
+  }
+
+  .color-white {
+    background-color: white;
+  }
 
   video {
     filter: brightness(50%);
@@ -640,8 +742,8 @@ export default {
   .black-background {
     margin-top: 300px;
     padding-top: 1px;
-    background-color: black;
   }
+
 
   .feat-listing-title {
     font-family: 'Montserrat';
