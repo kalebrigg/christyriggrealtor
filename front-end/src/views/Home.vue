@@ -20,6 +20,20 @@
           </div>
         </div>
 
+        <div class="hero-slider">
+          <div>
+            <h3 class="hero1">FIND YOUR NEW</h3>
+          </div>
+          <div>
+            <h1 id="item1"></h1>
+          </div>
+          <div>
+            <h4 id="bottom">Infinity Real Estate Group<br>Christy Buck Team</h4>
+          </div>
+
+        </div>
+
+
 
         <!-- <div class="main-content">
           <img
@@ -410,6 +424,30 @@ export default {
     color: white;
   }
 
+  #item1:before {
+    content: "DREAM HOME";
+    animation-name: fade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes fade {
+    0% {
+      content: "DREAM HOME";
+    }
+    33% {
+      content: "FUTURE";
+    }
+    66% {
+      content: "LIFE";
+    }
+    100% {
+      content: "DREAM HOME";
+    }
+  }
+
+
   .scroll-cue {
     display: flex;
     flex-direction: row;
@@ -488,6 +526,37 @@ export default {
   .main-logo {
 
   }
+
+  .hero-slider {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.3em;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+  }
+
+  .hero1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+
+  #item1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold
+  }
+
+  #bottom {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    font-family: 'Arapey', serif;
+  }
+
+
 
   .page-links {
     display: flex;

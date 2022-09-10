@@ -409,6 +409,11 @@ video {
   padding-right: 20px;
   padding-bottom: 30px;
 }
+
+.card-container:hover {
+  background-image:
+}
+
 .listing {
   width: 100%;
   height: 100%;
