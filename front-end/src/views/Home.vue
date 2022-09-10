@@ -127,68 +127,68 @@
 
 
 
-      <div class="black-background background" data-color="white">
+      <div class="black-background background">
 
         <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
 
         <div class="carousel-container" data-aos="fade-in" data-aos-duration="3000">
-          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-           <ol class="carousel-indicators">
-             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-           </ol>
-           <div class="carousel-inner">
-             <div class="carousel-item active">
-               <img class="d-block w-100" src="assets\images\listingImages\img-1.jpeg" alt="First slide">
-               <div class="img-text">
-                 <div class="img-text-firstline">
-                   <h3>1607 ELEM, HOUSTON TX, 77019</h3>
-                 </div>
-                 <div class="img-text-secondline">
-                   <h4>3 beds | 3.5 bath | 5,042 Sq.Ft.</h4>
-                   <h4>$2,176,000</h4>
-                 </div>
-               </div>
-             </div>
-             <div class="carousel-item">
-               <img class="d-block w-100" src="assets\images\listingImages\img-25.jpeg" alt="Second slide">
-               <div class="img-text">
-                 <div class="img-text-firstline">
-                   <p>1607 Elmen, Houston, TX, 77019</p>
-                 </div>
-                 <div class="img-text-secondline">
-                   <p>3 beds | 3.5 bath | 5,042 Sq.Ft.</p>
-                   <p>$2,176,000</p>
-                 </div>
-               </div>
-             </div>
-             <div class="carousel-item">
-               <img class="d-block w-100" src="assets\images\listingImages\img-22.jpeg" alt="Third slide">
-               <div class="img-text">
-                 <div class="img-text-firstline">
-                   <p>1607 Elmen, Houston, TX, 77019</p>
-                 </div>
-                 <div class="img-text-secondline">
-                   <p>3 beds | 3.5 bath | 5,042 Sq.Ft.</p>
-                   <p>$2,176,000</p>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="sr-only">Next</span>
-           </a>
-         </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="" >
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets\images\listingImages\img-1.jpeg" alt="First slide">
+                <div class="img-text">
+                  <div class="img-text-firstline">
+                    <h3>1607 ELEM, HOUSTON TX, 77019</h3>
+                  </div>
+                  <div class="img-text-secondline">
+                    <h4>3 beds | 3.5 bath | 5,042 Sq.Ft.</h4>
+                    <h4>$2,176,000</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets\images\listingImages\img-25.jpeg" alt="Second slide">
+                <div class="img-text">
+                  <div class="img-text-firstline">
+                    <h3>1607 ELEM, HOUSTON TX, 77019</h3>
+                  </div>
+                  <div class="img-text-secondline">
+                    <h4>3 beds | 3.5 bath | 5,042 Sq.Ft.</h4>
+                    <h4>$2,176,000</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets\images\listingImages\img-22.jpeg" alt="Third slide">
+                <div class="img-text">
+                  <div class="img-text-firstline">
+                    <h3>1607 ELEM, HOUSTON TX, 77019</h3>
+                  </div>
+                  <div class="img-text-secondline">
+                    <h4>3 beds | 3.5 bath | 5,042 Sq.Ft.</h4>
+                    <h4>$2,176,000</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
 
 
-       <div class="">
+       <div class="all-listings-button">
          VIEW ALL LISTINGS
        </div>
 
@@ -306,6 +306,7 @@ export default {
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    color: #FFFFFF;
   }
 
   @keyframes fade {
@@ -392,7 +393,6 @@ export default {
   }
   .main-logo {
   }
-<<<<<<< HEAD
 
   .hero-slider {
     font-family: 'Montserrat', sans-serif;
@@ -406,27 +406,27 @@ export default {
 
   .hero1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: lighter;
+    color: #FFFFFF;
   }
 
   #item1 {
     text-align: center;
-    font-size: 50px;
-    font-weight: bold
+    font-size: 70px;
+    font-weight: bold;
+    color: #FFFFFF;
   }
 
   #bottom {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0.2em;
     font-family: 'Arapey', serif;
+    color: #FFFFFF;
   }
 
 
-
-=======
->>>>>>> c7ba29d89085caa912e40f702ae029e12e8e84a3
   .page-links {
     display: flex;
     flex-direction: row;
@@ -633,6 +633,7 @@ export default {
   .black-background {
     margin-top: 300px;
     padding-top: 1px;
+    background-color: black;
   }
   .feat-listing-title {
     font-family: 'Montserrat';
@@ -650,46 +651,32 @@ export default {
     flex-direction: row;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .carousel {
-  }
-  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-    height:500px;
-}
-  .carousel-control-prev-icon {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
-    right: 110%;
-    position: absolute;
-}
-  .carousel-control-next-icon {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
-    left: 110%;
-    position: absolute;
-}
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: -35px !important;
-    left: 0;
-    z-index: 15;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
     justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
+  }
+
+  .carousel-control-prev {
+      left: -100px!important;
+  }
+
+  .carousel-control-next {
+    right: -100px!important;
+  }
+
+  .carousel-item img {
+    height: 95vh;
+  }
+
+
+.carousel-indicators{
+  bottom: -35px!important;
 }
+
 
 .img-text {
   background-color: rgba(0,0,0,0.4);
   color: white;
   width: 100%;
-  z-index:3;
+  z-index:20;
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Montserrat';
@@ -710,12 +697,11 @@ export default {
   font-style: normal;
 }
 
-.listingInfo h3 {
-  font-size:26px;
+.all-listings-button {
+
 }
-.listingInfo h4 {
-  font-size: 20px;
-}
+
+
 
 .grid-container {
   display: grid;
