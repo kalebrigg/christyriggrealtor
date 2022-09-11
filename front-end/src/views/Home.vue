@@ -62,8 +62,8 @@
         </div>
         <div class="christy-photo-section">
           <img class="christy-img" src="assets\images\IMG_5247.jpg" alt="">
-          <p class="title3">GET IN TOUCH - <span class="special"> 847.708.7229</span> </p>
-          <p class="title3 special">christyemail@gmail.com</p>
+          <p class="title3">GET IN TOUCH - <a  href="tel:847-708-7229" style="color: #7E7E7E"> <span class="special"> 847.708.7229</span></a> </p>
+          <a href="mailto:christyemail@gmail.com"><p class="title3 special">christyemail@gmail.com</p></a>
         </div>
       </div>
 
@@ -71,9 +71,6 @@
         <h3 class="main-title" data-aos="fade-up" data-aos-duration="1500">TESTIMONIALS</h3>
 
          <div class="testimonials-container" data-aos="fade-in" data-aos-duration="3000"  >
-          <!-- <div class="white-filter">
-            <img class="testimonials-img" src="assets\images\florian-schmidinger-b_79nOqf95I-unsplash.jpg" alt="">
-          </div> -->
           <div class="big-container">
             <div class="medium-container animate">
               <div class="testimonies">
@@ -132,7 +129,7 @@
         <h3 class="feat-listing-title" data-aos="fade-up" data-aos-duration="1500">FEATURED LISTINGS</h3>
 
         <div class="carousel-container" data-aos="fade-in" data-aos-duration="3000">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="" >
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="true">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -155,11 +152,11 @@
                 <img class="d-block w-100" src="assets\images\listingImages\img-25.jpeg" alt="Second slide">
                 <div class="img-text">
                   <div class="img-text-firstline">
-                    <h3>1607 ELEM, HOUSTON TX, 77019</h3>
+                    <h3>9551 NEUENS ROAD C, HOUSTON TX, 77080</h3>
                   </div>
                   <div class="img-text-secondline">
-                    <h4>3 beds | 3.5 bath | 5,042 Sq.Ft.</h4>
-                    <h4>$2,176,000</h4>
+                    <h4>3 beds | 2.5 bath | 1,498 Sq.Ft.</h4>
+                    <h4>$370,000</h4>
                   </div>
                 </div>
               </div>
@@ -167,11 +164,11 @@
                 <img class="d-block w-100" src="assets\images\listingImages\img-22.jpeg" alt="Third slide">
                 <div class="img-text">
                   <div class="img-text-firstline">
-                    <h3>1607 ELEM, HOUSTON TX, 77019</h3>
+                    <h3>1347 STUDER, HOUSTON TX, 77007</h3>
                   </div>
                   <div class="img-text-secondline">
-                    <h4>3 beds | 3.5 bath | 5,042 Sq.Ft.</h4>
-                    <h4>$2,176,000</h4>
+                    <h4>2 beds | 2.5 bath | 1,743 Sq.Ft.</h4>
+                    <h4>$350,000</h4>
                   </div>
                 </div>
               </div>
@@ -189,7 +186,7 @@
 
 
        <div class="all-listings-button">
-         VIEW ALL LISTINGS
+         <a href="#" style="color: white; text-decoration: none;">VIEW ALL LISTINGS</a>
        </div>
 
 
@@ -197,9 +194,9 @@
       </div>
 
 
-      <h3 class="main-title">CONNECT WITH CHRISTY</h3>
+      <h3 class="main-title"  data-aos="fade-up" data-aos-duration="1500">CONNECT WITH CHRISTY</h3>
 
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-in" data-aos-duration="3000">
         <div class="grid-image1">
           <img class="grid-image" src="assets\images\IMG_5244.JPG" alt="">
         </div>
@@ -228,7 +225,7 @@
             </li>
             <li>
               <a
-                href="https://www.youtube.com/channel/UC2PsyM6IfejA8JuP2OtidSw/featured"
+                href="https://www.har.com/christy-rigg/agent_CScanlan"
                 ><i class="fa fa-home" aria-hidden="true"></i
               ></a>
             </li>
@@ -264,13 +261,49 @@
       </div>
 
 
+      <footer>
+        <div class="footerContainer">
+          <div class="footer-top">
+            <img class="footer-img" src="assets\images\Group 4.svg" alt="">
+            <p class="top2">Infinity Real Estate Group<br>Christy Buck Team</p>
+          </div>
+          <div class="footerItem">
+            <ul class="footer-menu-bar">
+              <router-link to="/">
+                <li class="footer-menu-item first-menu-item">
+                  <p class="footerText">HOME</p>
+                </li>
+              </router-link>
 
-    <p class="footer-heart">
-      Made with
-      <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
-        <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji>
-      by <a href="">Kaleb Rigg</a>
-    </p>
+              <router-link to="/Listings">
+                <li class="footer-menu-item">
+                  <p class="footerText">LISTINGS</p>
+                </li>
+              </router-link>
+
+              <router-link to="/AboutChristy">
+                <li class="footer-menu-item">
+                  <p class="footerText">CONTACT</p>
+                </li>
+              </router-link>
+            </ul>
+
+
+          </div>
+          <p class="footer-heart">
+            Made with
+            <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+              <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji>
+            by <a class="kaleb-link" href="https://kalebrigg.dev">Kaleb Rigg</a>
+          </p>
+        </div>
+      </footer>
+
+
+
+
+
+
 
   </div>
 </template>
@@ -650,16 +683,16 @@ export default {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     justify-content: center;
   }
 
   .carousel-control-prev {
-      left: -100px!important;
+      left: -125px!important;
   }
 
   .carousel-control-next {
-    right: -100px!important;
+    right: -125px!important;
   }
 
   .carousel-item img {
@@ -676,13 +709,16 @@ export default {
   background-color: rgba(0,0,0,0.4);
   color: white;
   width: 100%;
-  z-index:20;
+  z-index: 20;
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Montserrat';
   font-style: normal;
   letter-spacing: 0.34em;
-  position: absolute
+  position: absolute;
+  bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .img-text-firstline {
@@ -698,7 +734,24 @@ export default {
 }
 
 .all-listings-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.all-listings-button a {
+  color: white;
+  text-decoration: none;
+  border: white solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.34em;
+  margin-bottom: 100px;
 }
 
 
@@ -778,14 +831,16 @@ export default {
   justify-content: center;
   vertical-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 10px;
   margin-right:10px;
   letter-spacing: 0.01em;
+  margin-top: 35px;
 }
 
 .contact p {
   margin-left: 10px;
+  margin-top:3px;
 }
 
 .contact a {
@@ -813,24 +868,55 @@ export default {
   font-size: 1.5rem;
 }
 
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.top2 {
+  font-size: 20px;
+  padding: 0;
+  padding-top: 15px;
+  margin: 0;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.footer-img {
+  height: 75px;
+  vertical-align: middle;
+}
+
 .footer-heart {
   /* text-align:center; */
-  margin-left: 1%;
   font-family: 'Montserrat', sans-serif;
-  color: #7E7E7E;
+  color: white;
   font-size: 12px;
+  text-align: center;
+  margin: 10px;
 }
 
 .footer-heart a {
   border-bottom: 1px solid #7E7E7E;
-  color: #7E7E7E;
+  color: white;
   padding-bottom: .25em;
   text-decoration: none;
 }
 
+.kaleb-link {
+  text-decoration: none;
+  color: white;
+}
+
 .footer-heart a:hover {
-  color: black;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s   5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  color: white;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s   5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 20%;

@@ -16,7 +16,7 @@ let listings = [
     bed: "3",
     bath: "2.5",
     squarefoot: "1,498",
-    image: "img-25.jpeg", 
+    image: "img-25.jpeg",
     link: "https://www.har.com/homedetail/9551-neuens-rd-c-houston-tx-77080/15346830?sid=6428644&cid=CScanlan",
   },
   {
@@ -79,16 +79,16 @@ let listings = [
     image: "img-24.jpeg",
     link: "https://www.har.com/homedetail/8327-ariel-st-houston-tx-77074/11129810?sid=5617009&cid=CScanlan",
   },
-  {
-    id: 9,
-    address: "9700 Leawood Boulevard #706, Houston, 77099",
-    price: "$70,000",
-    bed: "2",
-    bath: "2",
-    squarefoot: "1,195",
-    image: "img-2.jpeg",
-    link: "https://www.har.com/homedetail/9700-leawood-blvd-706-houston-tx-77099/15119298?sid=5561175&cid=CScanlan",
-  },
+  // {
+  //   id: 9,
+  //   address: "9700 Leawood Boulevard #706, Houston, 77099",
+  //   price: "$70,000",
+  //   bed: "2",
+  //   bath: "2",
+  //   squarefoot: "1,195",
+  //   image: "img-2.jpeg",
+  //   link: "https://www.har.com/homedetail/9700-leawood-blvd-706-houston-tx-77099/15119298?sid=5561175&cid=CScanlan",
+  // },
 
 ];
 

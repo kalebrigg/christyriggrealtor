@@ -299,10 +299,14 @@ li {
 }
 
 footer {
-  background-color: #efefef;
+  background-color: #676767;
   height: auto;
   width: 100vw;
   max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.3em;
+  color: white;
 }
 
 .footerItem {
@@ -311,6 +315,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
+  color: white;
 }
 
 .footer-menu-bar {
@@ -327,9 +332,10 @@ footer {
 }
 
 .footerText {
-  color: black;
+  color: white;
   font-size: 13px;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 .first-menu-item {
   border: none;
