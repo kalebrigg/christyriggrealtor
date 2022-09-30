@@ -16,11 +16,13 @@
             <router-link class="router" to="/Listings">
               <p class="listing-page">LISTINGS</p>
             </router-link>
-            <p class="contact-page">CONTACT</p>
+            <a href="#contact" style="text-decoration:none;color:white;">
+              <p class="contact-page">CONTACT</p>
+            </a>
           </div>
         </div>
 
-        <div class="hero-slider">
+        <div class="hero-slider" data-aos="fade-in" data-aos-duration="1500">
           <div>
             <h3 class="hero1">FIND YOUR NEW</h3>
           </div>
@@ -63,12 +65,12 @@
         <div class="christy-photo-section">
           <img class="christy-img" src="assets\images\IMG_5247.jpg" alt="">
           <p class="title3">GET IN TOUCH - <a  href="tel:847-708-7229" style="color: #7E7E7E"> <span class="special"> 847.708.7229</span></a> </p>
-          <a href="mailto:christyemail@gmail.com"><p class="title3 special">christyemail@gmail.com</p></a>
+          <a href="mailto:christyscanlanhomes@gmail.com"><p class="title3 special">christyscanlanhomes@gmail.com</p></a>
         </div>
       </div>
 
       <!-- https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/florian-schmidinger-b_79nOqf95I-unsplash.jpg -->
-        <h3 class="main-title" data-aos="fade-up" data-aos-duration="1500">TESTIMONIALS</h3>
+        <h3 id="testimonials" class="main-title" data-aos="fade-up" data-aos-duration="1500">TESTIMONIALS</h3>
 
          <div class="testimonials-container" data-aos="fade-in" data-aos-duration="3000"  >
           <div class="big-container">
@@ -192,9 +194,12 @@
 
 
       </div>
+      <div id="contact" style="width=100%;">
+
+      </div>
 
 
-      <h3 class="main-title"  data-aos="fade-up" data-aos-duration="1500">CONNECT WITH CHRISTY</h3>
+      <h3 class="main-title" id="connect"  data-aos="fade-up" data-aos-duration="1500">CONNECT WITH CHRISTY</h3>
 
       <div class="grid-container" data-aos="fade-in" data-aos-duration="3000">
         <div class="grid-image1">
@@ -233,31 +238,47 @@
         </div>
         <div class="grid-contact1">
           <div class="contact">
-            <a href="">
+            <a href="tel:847-708-7229" style="text-decoration:none;color:black;">
               <i class="fa fa-phone" aria-hidden="true"> </i>
             </a>
-            <p>847.708.7229</p>
+            <a class="text-link" href="tel:847-708-7229" style="text-decoration:none;color:black;">
+              <p>847.708.7229</p>
+            </a>
           </div>
         </div>
         <div class="grid-contact2">
           <div class="contact">
-            <a href="">
+            <a href="https://www.google.com/maps/place/Infinity+Real+Estate+Group:+Christy+Buck+Team/@29.540933,-95.2218829,17z/data=!3m1!4b1!4m5!3m4!1s0x864094a54ae0688b:0x291bf058ea359c4d!8m2!3d29.540933!4d-95.2196942" target="_blank" style="text-decoration:none;color:black;">
               <i class="fa fa-map-marker" aria-hidden="true"> </i>
             </a>
-            <p>Infinity Real Estate Group <br>
-              1000 Broadway Street Suite 120, <br>
-              Pearland, TX 77581</p>
+            <a class="text-link" href="https://www.google.com/maps/place/Infinity+Real+Estate+Group:+Christy+Buck+Team/@29.540933,-95.2218829,17z/data=!3m1!4b1!4m5!3m4!1s0x864094a54ae0688b:0x291bf058ea359c4d!8m2!3d29.540933!4d-95.2196942" target="_blank" style="text-decoration:none;color:black;">
+              <p>Infinity Real Estate Group <br>
+                1000 Broadway Street Suite 120, <br>
+                Pearland, TX 77581</p>
+            </a>
           </div>
         </div>
         <div class="grid-contact3">
           <div class="contact">
-            <a href="">
+            <a href="mailto:christyscanlanhomes@gmail.com" style="text-decoration:none; color:black;">
               <i class="fa fa-envelope" aria-hidden="true"> </i>
             </a>
-            <p>christyscanlanhomes@gmail.com</p>
+            <a class="text-link" href="mailto:christyscanlanhomes@gmail.com" style="text-decoration:none; color:black;">
+              <p>christyscanlanhomes@gmail.com</p>
+            </a>
           </div>
         </div>
 
+      </div>
+
+      <div class="end-contact-container" id="end-contact-container">
+          <p class="end-contact-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida
+          </p>
+      </div>
+      <div class="end-contact-container end2">
+        <a class="end-button-link" href="emailto:christyscanlanhomes@gmail.com"><p class="email-button" style="margin:0;padding:0;">Email Me!</p></a>
       </div>
 
 
@@ -276,16 +297,16 @@
               </router-link>
 
               <router-link to="/Listings">
-                <li class="footer-menu-item">
+                <li class="footer-menu-item men2">
                   <p class="footerText">LISTINGS</p>
                 </li>
               </router-link>
 
-              <router-link to="/AboutChristy">
-                <li class="footer-menu-item">
+              <a style="text-decoration:none;color:white;" href='#contact'>
+                <li class="footer-menu-item men2">
                   <p class="footerText">CONTACT</p>
                 </li>
-              </router-link>
+              </a>
             </ul>
 
 
@@ -541,7 +562,7 @@ export default {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 38px;
     margin: 0;
     padding: 0;
@@ -762,6 +783,7 @@ export default {
   grid-template-rows: auto auto auto auto;
   grid-gap: 1%;
   margin: 100px;
+  margin-bottom: 25px;
 }
 
 .grid-image {
@@ -831,16 +853,30 @@ export default {
   justify-content: center;
   vertical-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10px;
   margin-right:10px;
   letter-spacing: 0.01em;
   margin-top: 35px;
 }
 
+.text-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.text-link p {
+  justify-content: center;
+  vertical-align: center;
+}
+
 .contact p {
   margin-left: 10px;
   margin-top:3px;
+  font-size: 18px;
 }
 
 .contact a {
@@ -893,6 +929,43 @@ export default {
   vertical-align: middle;
 }
 
+.end-contact-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.end-contact-text {
+  font-size: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  width: 50%;
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+.end-button-link {
+  border: gray solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.end-button-link:hover{
+  background-color: gray;
+  color: white;
+}
+
+.end2 {
+  margin-bottom: 25px;
+}
+
 .footer-heart {
   /* text-align:center; */
   font-family: 'Montserrat', sans-serif;
@@ -927,4 +1000,137 @@ export default {
 .emoji {
   vertical-align: middle;
 }
+
+.men2 {
+  border-left: 0.1em solid white;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1124px) {
+}
+
+@media only screen and (max-width: 500px) {
+
+  .meet-christy-container {
+    flex-wrap: wrap;
+  }
+
+  .christy-bio-section {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .main-title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .christy-photo-section {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .title3 {
+    font-size: 14px;
+  }
+
+  .testimonials-container {
+    display:none;
+  }
+
+  #testimonials {
+    display:none;
+  }
+
+  .carousel-item img {
+    height: 50vh;
+  }
+
+  .img-text h3 {
+    font-size: 18px;
+  }
+
+  .img-text h4 {
+    font-size: 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% auto auto auto auto;
+    grid-gap: 1%;
+    margin: 0;
+  }
+
+  .grid-image1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .grid-image2,
+  .grid-image3 {
+    display: none;
+  }
+
+  .grid-image4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .grid-contact1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .grid-contact2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+
+  .grid-contact3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
+
+  .end-contact-text {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .top2 {
+    display: none;
+  }
+
+  .footer-top{
+    justify-content: center;
+  }
+
+  .footer-img {
+    height: 75px;
+    vertical-align: middle;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+}
+
+
+
 </style>

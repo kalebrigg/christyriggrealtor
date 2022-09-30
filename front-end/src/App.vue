@@ -299,7 +299,7 @@ li {
 }
 
 footer {
-  background-color: #676767;
+  background-color: #BEBEBE;
   height: auto;
   width: 100vw;
   max-width: 100%;

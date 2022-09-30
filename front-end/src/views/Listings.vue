@@ -16,8 +16,23 @@
           <router-link class="router" to="/">
             <p class="listing-page">HOME</p>
           </router-link>
-          <p class="contact-page">CONTACT</p>
+          <a href="/#contact" style="text-decoration:none;color:white;">
+            <p class="contact-page">CONTACT</p>
+          </a>
         </div>
+      </div>
+
+      <div class="hero-slider" data-aos="fade-in" data-aos-duration="1500">
+        <div>
+          <h3 class="hero1">FIND YOUR NEW</h3>
+        </div>
+        <div>
+          <h1 id="item1"></h1>
+        </div>
+        <div>
+          <h4 id="bottom">Infinity Real Estate Group<br>Christy Buck Team</h4>
+        </div>
+
       </div>
 
 
@@ -183,6 +198,44 @@
       </div>
 
     </div>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footer-top">
+          <img class="footer-img" src="assets\images\Group 4.svg" alt="">
+          <p class="top2">Infinity Real Estate Group<br>Christy Buck Team</p>
+        </div>
+        <div class="footerItem">
+          <ul class="footer-menu-bar">
+            <router-link to="/">
+              <li class="footer-menu-item first-menu-item">
+                <p class="footerText">HOME</p>
+              </li>
+            </router-link>
+
+            <router-link to="/Listings">
+              <li class="footer-menu-item">
+                <p class="footerText">LISTINGS</p>
+              </li>
+            </router-link>
+
+            <a style="text-decoration:none;color:white;" href='/#contact'>
+              <li class="footer-menu-item">
+                <p class="footerText">CONTACT</p>
+              </li>
+            </a>
+          </ul>
+
+
+        </div>
+        <p class="footer-heart">
+          Made with
+          <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+            <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji>
+          by <a class="kaleb-link" href="https://kalebrigg.dev">Kaleb Rigg</a>
+        </p>
+      </div>
+    </footer>
 
   </div>
 </template>
