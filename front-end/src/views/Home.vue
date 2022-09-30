@@ -8,18 +8,23 @@
         </video>
 
         <div class="main-content-container" data-aos="fade-in" data-aos-duration="1500">
-          <div class="main-logo">
-            <img src="assets\images\Group 4.svg" alt="">
-          </div>
 
-          <div class="page-links">
-            <router-link class="router" to="/Listings">
-              <p class="listing-page">LISTINGS</p>
-            </router-link>
-            <a href="#contact" style="text-decoration:none;color:white;">
-              <p class="contact-page">CONTACT</p>
-            </a>
-          </div>
+            <div class="main-logo">
+              <img class="main-img" src="assets\images\Group 4.svg" alt="">
+            </div>
+            <div class="main-logo2">
+              <img class="main-img2" src="Christy Rigg Realtor (2).png" alt="">
+            </div>
+
+            <div class="page-links">
+              <router-link to="/Listings">
+                <p class="listing-page">LISTINGS</p>
+              </router-link>
+              <a href="#contact" style="text-decoration:none;color:white;">
+                <p class="contact-page">CONTACT</p>
+              </a>
+            </div>
+
         </div>
 
         <div class="hero-slider" data-aos="fade-in" data-aos-duration="1500">
@@ -60,6 +65,9 @@
           <p class="title2">INFINITY REAL ESTATE GROUP <br> CHRISTY BUCK TEAM </p>
           <p class="description">
             Experienced in the art of sales and communication, Christy Scanlan Rigg has a true gift for guiding her clients through the real estate process. She has established herself as a formidable real estate professional with a proven track record of success. Christy's goal is to provide comprehensive support and unparalleled commitment to her clients. She has a true enthusiasm for helping her client's real estate goals become a reality. Christy ensures an open and direct line of communication throughout the entire sales transaction, which her clients cite as one of their favorite qualities. After earning a bachelor's degree from The University of Texas and a master's degree from the University of Houston, Christy formed a true love for the city of Houston and its surrounding areas. As a professional musician, Christy is passionate about opera and the arts. She enjoys performing with and supporting the fine arts community in and around Houston.
+          </p>
+          <p class="description2">
+            Experienced in the art of sales and communication, Christy Scanlan Rigg has a true gift for guiding her clients through the real estate process. She has established herself as a formidable real estate professional with a proven track record of success. Christy's goal is to provide comprehensive support and unparalleled commitment to her clients. She has a true enthusiasm for helping her client's real estate goals become a reality. Christy ensures an open and direct line of communication throughout the entire sales transaction, which her clients cite as one of their favorite qualities.
           </p>
         </div>
         <div class="christy-photo-section">
@@ -188,7 +196,10 @@
 
 
        <div class="all-listings-button">
-         <a href="#" style="color: white; text-decoration: none;">VIEW ALL LISTINGS</a>
+         <router-link to="/Listings" style="text-decoration:none; color:white;">
+           <!-- <a href="#" style="color: white; text-decoration: none;">VIEW ALL LISTINGS</a> -->
+           VIEW ALL LISTINGS
+         </router-link>
        </div>
 
 
@@ -273,8 +284,7 @@
 
       <div class="end-contact-container" id="end-contact-container">
           <p class="end-contact-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida
+            Let me help you discover your new future! Whether you are looking to buy your dream home, or sell a property, I look forward to creating your new reality. I am commited to meeting all of your expectations in a proffesional manner and offer my knowledge as a tool at your desposal. I am always free to chat and can't wait to work together.
           </p>
       </div>
       <div class="end-contact-container end2">
@@ -344,8 +354,6 @@ export default {
     filter: brightness(50%);
   }
   .main-content-container {
-    display: flex;
-    flex-direction: row;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 1%;
@@ -446,6 +454,10 @@ export default {
     }
   }
   .main-logo {
+    display: block;
+  }
+  .main-logo2 {
+    display: none;
   }
 
   .hero-slider {
@@ -567,6 +579,17 @@ export default {
     margin: 0;
     padding: 0;
     margin-right: 50px;
+  }
+  .description2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    display: none;
   }
   .meet-christy-container {
     display: flex;
@@ -752,6 +775,7 @@ export default {
   justify-content: space-between;
   font-family: 'Montserrat';
   font-style: normal;
+  flex-wrap: wrap;
 }
 
 .all-listings-button {
@@ -955,6 +979,7 @@ export default {
   font-weight: 500;
   text-decoration: none;
   color: black;
+  margin-bottom: 50px;
 }
 
 .end-button-link:hover{
@@ -1005,13 +1030,45 @@ export default {
   border-left: 0.1em solid white;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 799px) {
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .testimonials-container {
+    display:none;
+  }
+
+  #testimonials {
+    display:none;
+  }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1124px) {
-}
+/* @media only screen and (min-width: 800px) and (max-width: 1124px) {
+} */
 
 @media only screen and (max-width: 500px) {
+
+  .main-content-container {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .hero1 {
+    font-size: 30px;
+  }
+
+  .main-img{
+    display: none;
+  }
+
+  .main-img2 {
+    display:block;
+    height: 60px;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .main-logo2 {
+    display: block;
+  }
 
   .meet-christy-container {
     flex-wrap: wrap;
@@ -1027,9 +1084,14 @@ export default {
     padding: 0;
   }
 
-  .description {
+  .description{
+    display: none;
+  }
+
+  .description2 {
     font-size: 16px;
     line-height: 25px;
+    display: block;
   }
 
   .christy-photo-section {
@@ -1054,11 +1116,19 @@ export default {
   }
 
   .img-text h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .img-text h4 {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .black-background {
+    margin-top: 0px;
+  }
+
+  .main-title {
+    margin-top: 100px;
   }
 
   .grid-container {
@@ -1127,6 +1197,10 @@ export default {
     vertical-align: middle;
     justify-content: center;
     margin-bottom: 25px;
+  }
+
+  .page-links p {
+    font-size: 12px;
   }
 
 }
