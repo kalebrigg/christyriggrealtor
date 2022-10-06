@@ -323,7 +323,6 @@ video {
   top: 95%;
   position: absolute;
   justify-content: center;
-  opacity: 50%
 }
 
 .scroll-text {
@@ -336,7 +335,6 @@ video {
   color: white;
   animation: fade-slide-up 1s 1s ease-out forwards,
            pulse2 2s 3s ease-out infinite;
-  opacity: 0;
 }
 
 .scroll-img {
@@ -572,6 +570,7 @@ video {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 50px; 
 }
 
 .hero-header {

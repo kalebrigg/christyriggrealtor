@@ -326,7 +326,7 @@ footer {
   float: left;
   padding-left: 8px;
   padding-right: 8px;
-  border-left: 0.1em solid #bdb4b4;
+  border-left: 0.1em solid white;
 }
 
 .footerText {
