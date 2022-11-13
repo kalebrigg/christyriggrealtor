@@ -1,4 +1,19 @@
-# christyscandlan
+# Christy Rigg Realtor
+
+This is Christy's landing page for both buyers and sellers in the greater Houston Texas area. They can get to know Christy, browse some of her most significant transactions, and reach out to her with inquiries regarding buying or selling a home.
+
+### Built With
+
+* :smirk: Vue
+* :fire: Javascript
+* :pencil2: Figma
+
+
+## Live Site
+https://christyriggrealtor.com
+
+## Author
+Kaleb Rigg - kaleb2323rigg@gmail.com 
 
 ## Project setup
 ```
