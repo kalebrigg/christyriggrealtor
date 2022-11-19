@@ -348,6 +348,8 @@ export default {
 };
 </script>
 
+
+
 <style>
 
   video {
@@ -394,7 +396,6 @@ export default {
     top: 95%;
     position: absolute;
     justify-content: center;
-    opacity: 50%
   }
   .scroll-text {
     font-family: 'Montserrat', sans-serif;
@@ -406,7 +407,6 @@ export default {
     color: white;
     animation: fade-slide-up 1s 1s ease-out forwards,
              pulse2 2s 3s ease-out infinite;
-    opacity: 0;
   }
   .scroll-img {
     width: 25px;
@@ -1040,10 +1040,32 @@ export default {
   }
 }
 
+.page-links {
+  letter-spacing: .25em;
+  font-size: 15px;
+}
+
+.contact {
+  margin-top: 0;
+}
+
+.carousel-control-prev {
+  left: 0 !important;
+  opacity: 1 !important;
+}
+.carousel-control-next {
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
 /* @media only screen and (min-width: 800px) and (max-width: 1124px) {
 } */
 
 @media only screen and (max-width: 500px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   .main-content-container {
     margin-left: 5px;
@@ -1051,6 +1073,10 @@ export default {
   }
   .hero1 {
     font-size: 30px;
+  }
+
+  .main-title {
+    margin-top: 0;
   }
 
   .main-img{
@@ -1203,8 +1229,24 @@ export default {
     font-size: 12px;
   }
 
+  .page-links {
+    letter-spacing: .25em;
+    font-size: 15px;
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  .carousel-control-prev {
+    left: 0 !important;
+    opacity: 1 !important;
+  }
+  .carousel-control-next {
+    right: 0;
+    opacity: 1 !important;
+  }
+
 }
-
-
 
 </style>
