@@ -348,6 +348,8 @@ export default {
 };
 </script>
 
+
+
 <style>
 
   video {
@@ -1052,7 +1054,7 @@ export default {
   opacity: 1 !important;
 }
 .carousel-control-next {
-  right: 0;
+  right: 0 !important;
   opacity: 1 !important;
 }
 
@@ -1064,7 +1066,7 @@ export default {
   body {
     overflow-x: hidden;
   }
-  
+
   .main-content-container {
     margin-left: 5px;
     margin-right: 5px;
