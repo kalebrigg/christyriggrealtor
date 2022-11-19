@@ -407,6 +407,7 @@ export default {
     color: white;
     animation: fade-slide-up 1s 1s ease-out forwards,
              pulse2 2s 3s ease-out infinite;
+    opacity: 0;
   }
   .scroll-img {
     width: 25px;
