@@ -657,7 +657,7 @@ export default {
     flex-direction: row;
     align-items: center;
     background-image: url("https://kalebrigg-bucket.s3.us-west-1.amazonaws.com/Group+5.png");
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment:fixed;
     background-position-y: center;
   }
