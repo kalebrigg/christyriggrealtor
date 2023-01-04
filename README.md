@@ -13,7 +13,7 @@ This is Christy's landing page for both buyers and sellers in the greater Housto
 https://christyriggrealtor.com
 
 ## Author
-Kaleb Rigg - kaleb2323rigg@gmail.com 
+Kaleb Rigg - kalebriggdev@gmail.com 
 
 ## Project setup
 ```
